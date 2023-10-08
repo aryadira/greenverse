@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "NHaasGroteskRg";
+  src: local("NeueHaasGrotesk"), url("./fonts/neue_haas/NHaasGroteskTXPro-55Rg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NHaasGroteskMd";
+  src: local("NeueHaasGrotesk"), url("./fonts/neue_haas/NHaasGroteskTXPro-65Md.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NHaasGroteskBd";
+  src: local("NeueHaasGrotesk"), url("./fonts/neue_haas/NHaasGroteskTXPro-75Bd.ttf") format("truetype");
+}
+
+* {
+  font-family: "NHaasGroteskRg", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
