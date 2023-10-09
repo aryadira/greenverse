@@ -13,7 +13,7 @@ const NavOverlayDown = ({ active, pages }) => {
   const isLink = (pages) => {
     if (pages == "Products") {
       return (
-        <ul className='w-[20%] text-base'>
+        <ul className='w-[20%] text-xl leading-10'>
           <li onClick={refreshPage}>
             <Link to={"/products"} className='block mb-4'>
               Discover All
@@ -35,7 +35,7 @@ const NavOverlayDown = ({ active, pages }) => {
       );
     } else if (pages == "Services") {
       return (
-        <ul className='w-[20%] text-base'>
+        <ul className='w-[20%] text-xl leading-10'>
           <li onClick={refreshPage}>
             <Link to={"/services"} className='block mb-4'>
               Discover All
@@ -57,7 +57,7 @@ const NavOverlayDown = ({ active, pages }) => {
       );
     } else {
       return (
-        <ul className='lg:w-[16%] w-10% text-base '>
+        <ul className='lg:w-[16%] w-10% text-xl leading-10'>
           <li className='mb-5' onClick={refreshPage}>
             <Link to={"/products"} className='block'>
               Products
@@ -107,7 +107,7 @@ const NavOverlayDown = ({ active, pages }) => {
 
   return (
     <div
-      className={`clicked-link w-full bg-white shadow-md backdrop-blur-sm bg-opacity-80 absolute transition duration-500 ease-in-out delay-100 py-5 -z-10 ${
+      className={`clicked-link w-full bg-white border-b backdrop-blur-sm bg-opacity-80 absolute transition duration-500 ease-in-out delay-100 py-5 -z-10 ${
         active == "" ? "-translate-y-[600px]" : ""
       }`}>
       <SpacingLayout>
@@ -144,7 +144,7 @@ const Navbar = () => {
     <header className='w-full bg-white top-0 fixed z-10'>
       <SpacingLayout>
         <BoxContainer>
-          <nav className='navbar flex justify-between py-3 items-center'>
+          <nav className='navbar flex justify-between py-3 items-center z-20 bg-white'>
             <div className='logo' onClick={refreshPage}>
               <Link to={"/"} className='font-HaasBd text-2xl'>
                 Greenverse
