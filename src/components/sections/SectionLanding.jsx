@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import landingImg from "../../assets/img/landing-img1.svg";
+import { landingImg1 } from "../../assets/img/";
 import ButtonDark from "../parts/ButtonDark";
 import ButtonLight from "../parts/ButtonLight";
 
@@ -23,6 +23,8 @@ const SectionLanding = () => {
       </div>
       <div className="right md:w-[550px] w-[200px]">
         <img src={landingImg} className="" />
+      <div className="right w-[550px]">
+        <img src={landingImg1} />
       </div>
     </div>
   );
