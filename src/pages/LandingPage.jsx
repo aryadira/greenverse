@@ -11,7 +11,12 @@ const LandingPage = () => {
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <SpacingLayout className="bg-[#F5F5F7] mt-[300px]">
+      <SpacingLayout className="bg-[#F5F5F7]">
+        <BoxContainer>
+          <SectionBenefit />
+        </BoxContainer>
+      </SpacingLayout>
+      <SpacingLayout className="bg-[#F5F5F7] mt-[100px]">
         <BoxContainer>
           <SectionProducts />
         </BoxContainer>

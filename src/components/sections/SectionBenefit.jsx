@@ -4,7 +4,7 @@ import { landingImg2, arrow } from "../../assets/img/";
 const sectionBenefit = () => {
   return (
     <>
-    <div className='wrapper mt-28'>
+    <div className='wrapper'>
       <div className="title text-center">
         <p className='text-[#7D7D7D]'>Reasons.</p>
         <h1 className='text-[50px]'>Why should choose Greenverse?</h1>
