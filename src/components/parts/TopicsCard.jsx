@@ -1,15 +1,15 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from "react";
-import star from "../../assets/img/star.png";
 
 const TopicsCard = (props) => {
   return (
-    <div className="flex items-center">
-      <span>
-        <img src={star} width="57px" height="57px" alt="" />
-      </span>
-      <p className="text-[27px] ml-9">{props.title}</p>
+    <div className="mt-4">
+      <img src={props.img} alt="" />
+      <div className="text mt-2">
+        <p className="text-sm text-[#676767]">{props.title}</p>
+        <p>{props.desc}</p>
+      </div>
     </div>
   );
 };
