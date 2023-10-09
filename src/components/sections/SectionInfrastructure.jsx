@@ -1,7 +1,7 @@
 import React from 'react';
 import { infra2, infra3, infra4 } from "../../assets/img/";
 
-const SectionInfrastructure = () => {
+const SectionInfrastructure = (props) => {
   return (
     <div className="wrapper">
         <div className="container flex w-full justify-evenly items-center ">
