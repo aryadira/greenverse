@@ -3,14 +3,14 @@ import { SectionLanding, SectionBenefit } from "../components/sections/";
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
-      <SpacingLayout className="bg-[#F5F5F7]">
+    <div className="landing-page bg-[#F5F5F7]">
+      <SpacingLayout>
         <BoxContainer>
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <div className="box-3 bg-red-500">
-        <SpacingLayout className="bg-green-300">
+      <div>
+        <SpacingLayout>
           <BoxContainer>
             <SectionBenefit />
           </BoxContainer>
