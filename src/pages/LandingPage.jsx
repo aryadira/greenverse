@@ -1,7 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { BoxContainer, SpacingLayout } from "../layouts";
 import SectionProducts from "../components/sections/SectionProducts";
-import { SectionLanding, SectionTopics } from "../components/sections";
+import {
+  SectionLanding,
+  SectionTopics,
+  SectionBenefit,
+} from "../components/sections";
 
 const LandingPage = () => {
   return (
@@ -11,7 +15,12 @@ const LandingPage = () => {
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <SpacingLayout className="my-[300px]">
+      <SpacingLayout className="bg-[#F5F5F7]">
+        <BoxContainer>
+          <SectionBenefit />
+        </BoxContainer>
+      </SpacingLayout>
+      <SpacingLayout className="bg-[#F5F5F7] mt-[100px]">
         <BoxContainer>
           <SectionProducts />
         </BoxContainer>

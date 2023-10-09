@@ -13,7 +13,7 @@ const SectionTopics = () => {
             of here
           </p>
           <div className="topics-card">
-            <TopicsCard />
+            <TopicsCard title="Design"/>
           </div>
         </div>
       </div>
