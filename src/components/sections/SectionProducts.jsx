@@ -25,12 +25,12 @@ const SectionProducts = () => {
           />
           <CardProduct
             number={"3"}
-            desc={"Quality agricultural materials"}
+            desc={"Quality \n agricultural materials"}
             img={product3}
           />
           <CardProduct
             number={"4"}
-            desc={"Advanced agricultural tools"}
+            desc={"Advanced \n agricultural tools"}
             img={product4}
           />
         </div>
