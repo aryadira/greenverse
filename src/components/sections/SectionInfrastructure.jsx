@@ -1,5 +1,7 @@
 import React from "react";
-import { infra2, infra3, infra4 } from "../../assets/img/";
+import { infra1, infra2, infra3, infra4 } from "../../assets/img/";
+import check from "../../assets/img/check.png";
+import ButtonGreen from "../parts/ButtonGreen";
 
 const SectionInfrastructure = () => {
   return (
@@ -9,6 +11,42 @@ const SectionInfrastructure = () => {
         <span className="text-black">Keep Exploring.</span> We have any
         solutions from our services!
       </p>
+
+      <div className="container-top mt-8 flex justify-between">
+        <div className="left">
+          <img src={infra1} alt="" />
+        </div>
+        <div className="right max-w-[581px]">
+          <h1 className="text-[32px] ">Green Infrastructire Design</h1>
+          <p className="max-w-md text-[#676767] leading-tight">
+            Green infrastructure integrates plants and other natural elements to
+            make urban spaces more sustainable and environmentally friendly.
+          </p>
+          <div className="btn-group">
+            <div className="first flex">
+              <ButtonGreen title="Parks and urban forest" />
+              <div className="mx-1"></div>
+              <ButtonGreen title="Bioswales and rain gardens" />
+            </div>
+            <div className="second flex">
+              <ButtonGreen title="Forests and nature reserves" />
+              <div className="mx-1"></div>
+              <ButtonGreen title="Green Transportation" />
+            </div>
+            <div className="third flex">
+              <ButtonGreen title="Wetlands and constructed wetlands" />
+              <div className="mx-1"></div>
+              <ButtonGreen title="Green streets" />
+            </div>
+            <div className="fourth flex">
+              <ButtonGreen title="Green roofs and walls" />
+              <div className="mx-1"></div>
+              <ButtonGreen title="Wildlife habitats and corridors" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="right"></div>
       <div className="container flex w-full justify-evenly items-center ">
         <div className="left-content w-[35%]">
           <h2 className="text-[30px] font-semibold w-full">

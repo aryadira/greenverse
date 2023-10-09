@@ -12,7 +12,7 @@ import {
 const LandingPage = () => {
   return (
     <div className="landing-page bg-[#F5F5F7]">
-      <SpacingLayout className="mb-[300px]">
+      <SpacingLayout className="mb-[300px] mt-[150px]">
         <BoxContainer>
           <SectionLanding />
         </BoxContainer>
