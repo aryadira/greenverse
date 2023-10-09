@@ -5,6 +5,7 @@ import {
   SectionLanding,
   SectionTopics,
   SectionBenefit,
+  SectionInfrastructure,
   SectionConsultation,
 } from "../components/sections";
 
@@ -16,14 +17,19 @@ const LandingPage = () => {
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <SpacingLayout className="bg-[#F5F5F7]">
+      <SpacingLayout className="">
         <BoxContainer>
           <SectionBenefit />
         </BoxContainer>
       </SpacingLayout>
-      <SpacingLayout className="bg-[#F5F5F7] mt-[100px]">
+      <SpacingLayout className="mt-[100px]">
         <BoxContainer>
           <SectionProducts />
+        </BoxContainer>
+      </SpacingLayout>
+      <SpacingLayout className="mt-[100px]">
+        <BoxContainer>
+          <SectionInfrastructure />
         </BoxContainer>
       </SpacingLayout>
       <SpacingLayout className="my-[300px]">
