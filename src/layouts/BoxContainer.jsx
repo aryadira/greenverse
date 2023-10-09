@@ -1,7 +1,7 @@
-import layoutStyles from "../constants/styles/layoutStyles";
+import { styles } from "../constants/styles/layoutStyles";
 
 const BoxContainer = ({ children, className, ...props }) => {
-  return <div className={`w-full ${layoutStyles.boxWidth} ${className}`}>{children}</div>;
+  return <div className={`w-full ${styles.boxWidth} ${className}`}>{children}</div>;
 };
 
 export default BoxContainer;
