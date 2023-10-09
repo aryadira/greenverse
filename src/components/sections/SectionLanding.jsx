@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { landingImg1 } from "../../assets/img/";
+import { landingImg1 } from "../../assets/img";
 import ButtonDark from "../parts/ButtonDark";
 import ButtonLight from "../parts/ButtonLight";
 
@@ -16,14 +16,12 @@ const SectionLanding = () => {
           greener world in the future by committing to developing innovative,
           sustainable and environmentally friendly solutions.
         </h1>
-        <div className="btn flex items-center">
+        <div className="btn flex items-cent31er">
           <ButtonDark title={"Get Started"} />
           <ButtonLight title={"Explore"} />
         </div>
       </div>
       <div className="right md:w-[550px] w-[200px]">
-        <img src={landingImg} className="" />
-      <div className="right w-[550px]">
         <img src={landingImg1} />
       </div>
     </div>
