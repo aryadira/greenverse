@@ -3,7 +3,7 @@ import { infra1, infra2, infra3, infra4 } from "../../assets/img/";
 import check from "../../assets/img/check.png";
 import ButtonGreen from "../parts/ButtonGreen";
 
-const SectionInfrastructure = () => {
+const SectionInfrastructure = (props) => {
   return (
     <div className="wrapper">
       <p className="text-[#676767] text-xl font-base">And Then...</p>

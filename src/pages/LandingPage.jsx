@@ -6,7 +6,11 @@ import {
   SectionTopics,
   SectionBenefit,
   SectionInfrastructure,
+<<<<<<< HEAD
+  SectionConsultation
+=======
   SectionConsultation,
+>>>>>>> c3440294cb3a02c7a1c207781f658314f06d9cea
 } from "../components/sections";
 
 const LandingPage = () => {
@@ -30,6 +34,11 @@ const LandingPage = () => {
       <SpacingLayout className="mt-[100px]">
         <BoxContainer>
           <SectionInfrastructure />
+        </BoxContainer>
+      </SpacingLayout>
+      <SpacingLayout className="mt-[100px]">
+        <BoxContainer>
+          <SectionConsultation />
         </BoxContainer>
       </SpacingLayout>
       <SpacingLayout className="my-[300px]">
