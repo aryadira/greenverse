@@ -1,12 +1,12 @@
 import { BoxContainer, SpacingLayout } from "../layouts";
+import SectionLanding from "../components/sections/SectionLanding";
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <SpacingLayout>
+      <SpacingLayout className="bg-[#F5F5F7]">
         <BoxContainer>
-          <div className="box-1 bg-red-300">BOX 1</div>
-          <div className="box-2 bg-red-400">BOX 2</div>
+          <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
       <div className="box-3 bg-red-500">
