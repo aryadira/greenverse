@@ -5,8 +5,8 @@ import { SectionLanding, SectionBenefit } from "../components/sections/";
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
-      <SpacingLayout className="bg-[#F5F5F7]">
+    <div className="landing-page bg-[#F5F5F7]">
+      <SpacingLayout className="bg-[#F5F5F7] mb-[300px]">
         <BoxContainer>
           <SectionLanding />
         </BoxContainer>

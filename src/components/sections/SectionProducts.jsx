@@ -12,7 +12,7 @@ const SectionProducts = () => {
         to get the solutions
       </p>
       <div className="card">
-        <div className="product-card md:flex md:flex-wrap md:justify-between my-12 flex justify-center flex-wrap">
+        <div className="product-card gap-6 grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-4 my-12">
           <CardProduct
             number={"1"}
             desc={"Quality seeds for abundant harvests"}
