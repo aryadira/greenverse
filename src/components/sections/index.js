@@ -1,4 +1,5 @@
 import SectionLanding from "./SectionLanding";
-import SectionBenefit from "./sectionBenefit";
+import SectionBenefit from "./SectionBenefit";
+import SectionTopics from "./SectionTopics";
 
-export { SectionBenefit, SectionLanding };
+export { SectionBenefit, SectionLanding, SectionTopics };
