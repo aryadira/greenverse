@@ -12,12 +12,12 @@ const SectionInfrastructure = () => {
                     <a href="" className='py-3 px-5 rounded-full bg-[#313A36] text-white'>Learn More</a>
                 </div>
             </div>
-            <div className="left-content w-[50%] flex justify-center">
+            <div className="left-content w-[50%] flex justify-end">
                 <img src={ infra2 } alt="" />
             </div>
         </div>
         <div className="container flex w-full mt-5 justify-evenly items-center ">
-            <div className="left-content w-[50%] flex justify-center">
+            <div className="left-content w-[50%] flex justify-start">
                 <img src={ infra3 } alt="" />
             </div>
             <div className="left-content w-[35%] mt-10">
@@ -36,7 +36,7 @@ const SectionInfrastructure = () => {
                     <a href="" className='py-3 px-5 rounded-full bg-[#313A36] text-white'>Learn More</a>
                 </div>
             </div>
-            <div className="left-content w-[50%] flex justify-center">
+            <div className="left-content w-[50%] flex justify-end">
                 <img src={ infra4 } alt="" />
             </div>
         </div>
