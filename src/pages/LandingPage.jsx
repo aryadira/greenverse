@@ -1,31 +1,21 @@
+/* eslint-disable no-unused-vars */
 import { BoxContainer, SpacingLayout } from "../layouts";
+import SectionProducts from "../components/sections/SectionProducts";
 import { SectionLanding, SectionBenefit } from "../components/sections/";
 
 const LandingPage = () => {
   return (
     <div className="landing-page bg-[#F5F5F7]">
-      <SpacingLayout>
+      <SpacingLayout className="bg-[#F5F5F7] mb-[300px]">
         <BoxContainer>
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <div>
-        <SpacingLayout>
-          <BoxContainer>
-            <SectionBenefit />
-          </BoxContainer>
-        </SpacingLayout>
-      </div>
-      <SpacingLayout>
+      <SpacingLayout className="bg-[#F5F5F7] mt-[300px]">
         <BoxContainer>
-          <div className="box-4 bg-red-600">BOX 4</div>
+          <SectionProducts />
         </BoxContainer>
       </SpacingLayout>
-      <div className="box-5 bg-red-700">
-        <SpacingLayout>
-          <BoxContainer>BOX 5</BoxContainer>
-        </SpacingLayout>
-      </div>
     </div>
   );
 };
