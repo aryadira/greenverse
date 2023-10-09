@@ -1,25 +1,31 @@
-import React from 'react';
-import { consul } from "../../assets/img/index";
+/* eslint-disable react/no-unescaped-entities */
+import React from "react";
+import ButtonDark from "../parts/ButtonDark";
+import { consul } from "../../assets/img";
 
 const SectionConsultation = () => {
   return (
-    <div className='wrapper'>
-        <div className="container flex justify-evenly">
-            <div className="left-content bg-white w-[50%] flex justify-center items-center rounded-[30px]">
-                <div className='w-[550px] h-[45%] relative'>
-                    <p className='text-[15px] text-[#676767]'>Don’t know your plan?</p>
-                    <h3 className='text-[30px] leading-8 mt-[2px]'>Let’s consultation. <span className='text-[#676767]'>You can consultation what you needs</span></h3>
-                    <div className="btn-left">
-                        <a href="" className='bg-[#313A36] text-white py-2 px-3 absolute bottom-0 rounded-full'>Consultation Now!</a>    
-                    </div>
-                </div>
-            </div>
-            <div className="right-content">
-                <img src={consul} alt="" />
-            </div>
+    <div className="flex justify-between">
+      <div className="left bg-white w-1/2 rounded-[30px] pt-20 pl-12">
+        <div className="wrapper">
+          <p className="text-[#676767] text-xl font-base">
+            Don’t know your plan?
+          </p>
+          <p className="text-[32px] text-[#676767] max-w-md leading-tight">
+            <span className="text-black">Let’s consultation.</span>
+            You can consultation what you needs
+          </p>
+          <div className="mt-14">
+            <ButtonDark title="Consultation Now!" />
+          </div>
         </div>
+      </div>
+      <div className="center mx-3"></div>
+      <div className="right w-1/2">
+        <img src={consul} alt="" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionConsultation
+export default SectionConsultation;
