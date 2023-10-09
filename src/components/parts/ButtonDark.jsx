@@ -4,7 +4,7 @@ import React from "react";
 
 const ButtonDark = (props) => {
   return (
-    <div className="mt-[24px]">
+    <div className="mt-[30px]">
       <a href="#" className="bg-black text-white rounded-[40px] px-5 py-3">
         {props.title}
       </a>

@@ -6,7 +6,7 @@ import ButtonLight from "../parts/ButtonLight";
 
 const SectionLanding = () => {
   return (
-    <div className="wrapper flex mt-28 justify-between items-center">
+    <div className="wrapper flex mt-28 justify-between items-center flex-wrap">
       <div className="left">
         <h1 className="text-6xl leading-tight">
           Providing Solutions for <br /> Greening the World
@@ -21,8 +21,8 @@ const SectionLanding = () => {
           <ButtonLight title={"Explore"} />
         </div>
       </div>
-      <div className="right w-[550px]">
-        <img src={landingImg} />
+      <div className="right md:w-[550px] w-[200px]">
+        <img src={landingImg} className="" />
       </div>
     </div>
   );
