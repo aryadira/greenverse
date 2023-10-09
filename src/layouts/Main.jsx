@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <main className='bg-baseColor flex justify-center flex-col relative h-max'>
       <Navbar />
-      <Routing />
+        <Routing />
       <Footer />
     </main>
   );
