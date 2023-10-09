@@ -1,31 +1,35 @@
+/* eslint-disable no-unused-vars */
 import { BoxContainer, SpacingLayout } from "../layouts";
-import { SectionLanding, SectionBenefit } from "../components/sections/";
+import SectionProducts from "../components/sections/SectionProducts";
+import {
+  SectionLanding,
+  SectionTopics,
+  SectionBenefit,
+} from "../components/sections";
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
-      <SpacingLayout className="bg-[#F5F5F7]">
+    <div className="landing-page bg-[#F5F5F7]">
+      <SpacingLayout className="mb-[300px]">
         <BoxContainer>
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <div className="box-3 bg-red-500">
-        <SpacingLayout className="bg-green-300">
-          <BoxContainer>
-            <SectionBenefit />
-          </BoxContainer>
-        </SpacingLayout>
-      </div>
-      <SpacingLayout>
+      <SpacingLayout className="bg-[#F5F5F7]">
         <BoxContainer>
-          <div className="box-4 bg-red-600">BOX 4</div>
+          <SectionBenefit />
         </BoxContainer>
       </SpacingLayout>
-      <div className="box-5 bg-red-700">
-        <SpacingLayout>
-          <BoxContainer>BOX 5</BoxContainer>
-        </SpacingLayout>
-      </div>
+      <SpacingLayout className="bg-[#F5F5F7] mt-[100px]">
+        <BoxContainer>
+          <SectionProducts />
+        </BoxContainer>
+      </SpacingLayout>
+      <SpacingLayout className="my-[300px]">
+        <BoxContainer>
+          <SectionTopics />
+        </BoxContainer>
+      </SpacingLayout>
     </div>
   );
 };
