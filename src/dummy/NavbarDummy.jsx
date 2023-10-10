@@ -13,7 +13,7 @@ const NavbarDummy = () => {
           <Link to={"/products/seeds"}>Seeds</Link>
           <Link to={"/products/materials"}>Materials</Link>
           <Link to={"/products/tools"}>Tools</Link>
-          <Link to={"/products/fertilizers"}>Fertilizer</Link>
+          <Link to={"/products/Fertilizers"}>Fertilizer</Link>
         </li>
         <li className='px-2'>
           <a href='#'>Services</a>
