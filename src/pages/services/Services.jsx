@@ -4,11 +4,13 @@ const Services = () => {
   const path = useLocation();
 
   return path.pathname != "/services" ? (
-    <div className='Services'>
+    <div className="Services">
       <Outlet />
     </div>
   ) : (
-    <h1>Services hahahah</h1>
+    <div>
+      
+    </div>
   );
 };
 
