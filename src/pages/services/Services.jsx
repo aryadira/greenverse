@@ -8,8 +8,8 @@ const Services = () => {
 			<Outlet />
 		</div>
 	) : (
-		<div className=''>
-			
+		<div>
+			<img src='' alt='' />
 		</div>
 	);
 };
