@@ -5,15 +5,16 @@ import {
   Topics,
   NotFound,
   Products,
-  Seeds,
-  Materials,
-  Tools,
-  Fertilizers,
+  Brassicas,
+  CoverCropMixes,
+  Grains,
+  GrassesMilletsSorghums,
   Services,
   AgriculturePlantation,
   GreenInfrastructure,
   SmartIrrigationSystem,
   VerticalFarming,
+  Legumes,
 } from "../pages";
 
 const Routing = () => {
@@ -21,10 +22,11 @@ const Routing = () => {
     <Routes>
       <Route path='/' exact element={<LandingPage />} />
       <Route path='products' element={<Products />}>
-        <Route path='seeds' element={<Seeds />} />
-        <Route path='materials' element={<Materials />} />
-        <Route path='tools' element={<Tools />} />
-        <Route path='fertilizers' element={<Fertilizers />} />
+        <Route path='brassicas' element={<Brassicas />} />
+        <Route path='cover-crop-mixes' element={<CoverCropMixes />} />
+        <Route path='grains' element={<Grains />} />
+        <Route path='grasses-millets-sorghums' element={<GrassesMilletsSorghums />} />
+        <Route path='legumes' element={<Legumes />} />
       </Route>
       <Route path='/services' element={<Services />}>
         <Route path={"green-infrastructure"} element={<GreenInfrastructure />} />

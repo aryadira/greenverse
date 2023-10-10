@@ -3,10 +3,11 @@ import LandingPage from "./LandingPage";
 
 // products
 import Products from "./products/Products";
-import Seeds from "./products/Seeds";
-import Fertilizers from "./products/Fertilizers";
-import Tools from "./products/Tools";
-import Materials from "./products/Materials";
+import Grains from "./products/Grains";
+import Brassicas from "./products/Brassicas";
+import GrassesMilletsSorghums from "./products/GrassesMilletsSorghums";
+import CoverCropMixes from "./products/CoverCropMixes";
+import Legumes from "./products/Legumes";
 
 // services
 import Services from "./services/Services";
@@ -24,10 +25,11 @@ export {
   Topics,
   NotFound,
   Products,
-  Seeds,
-  Fertilizers,
-  Tools,
-  Materials,
+  Grains,
+  Brassicas,
+  GrassesMilletsSorghums,
+  CoverCropMixes,
+  Legumes,
   Services,
   GreenInfrastructure,
   SmartIrrigationSystem,
