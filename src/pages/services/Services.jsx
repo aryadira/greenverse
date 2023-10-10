@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom';
+import { servicesBanner } from '../../assets/img';
 
 const Services = () => {
 	const path = useLocation();
@@ -8,8 +9,9 @@ const Services = () => {
 			<Outlet />
 		</div>
 	) : (
-		<div>
-			<img src='' alt='' />
+		<div className=''>
+			<img src={servicesBanner} alt='' />
+			<p>h1</p>
 		</div>
 	);
 };
