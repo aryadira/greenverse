@@ -6,7 +6,7 @@ import { SectionLanding, SectionTopics, SectionBenefit, SectionInfrastructure, S
 const LandingPage = () => {
   return (
     <div className='landing-page bg-[#F5F5F7]'>
-      <SpacingLayout className='mb-[300px] mt-[150px]'>
+      <SpacingLayout className='mb-[300px] mt-[300px]'>
         <BoxContainer>
           <SectionLanding />
         </BoxContainer>

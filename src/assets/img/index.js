@@ -14,6 +14,15 @@ import product4 from "./product-4.svg";
 import topics1 from "./topics-1.svg";
 import topics2 from "./topics-2.svg";
 import topics3 from "./topics-3.svg";
+import servicesBanner from "./services-banner.png";
+import agriPlant1 from "./agriPlant1.png";
+import agriPlant2 from "./agriPlant2.png";
+import farming1 from "./farming1.png";
+import farming2 from "./farming2.png";
+import infraGreen1 from "./infraGreen1.png";
+import infraGreen2 from "./infraGreen2.png";
+import irrigation1 from "./irrigation1.png";
+import irrigation2 from "./irrigation2.png";
 
 export {
   arrow,
@@ -32,4 +41,13 @@ export {
   topics1,
   topics2,
   topics3,
+  agriPlant1,
+  agriPlant2,
+  infraGreen1,
+  infraGreen2,
+  irrigation1,
+  irrigation2,
+  farming1,
+  farming2,
+  servicesBanner,
 };

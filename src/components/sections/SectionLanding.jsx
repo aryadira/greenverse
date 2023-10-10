@@ -20,7 +20,7 @@ const SectionLanding = () => {
           <ButtonLight title={"Explore"} />
         </div>
       </div>
-      <div className='right md:w-[550px] w-[200px]'>
+      <div className='right md:w-[550px] w-[200px] my-10'>
         <img src={landingImg1} />
       </div>
     </div>
