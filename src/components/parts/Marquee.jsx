@@ -1,11 +1,84 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from "react";
+import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// 
 
 const items = [1,2,3,4,5,6];
 
 const Marquee = () => {
+  const [currentScroll, setCurrentScroll] = useState(0);
+  const [isScrollingDown, setIsScrollingDown] = useState(true);
+  const [tween, setTween] = useState(null);
+
+  useEffect(() => {
+    // Membuat tween GSAP
+    const newTween = gsap.to(".marquee_part", {
+      xPercent: -100,
+      repeat: -1,
+      duration: 10,
+      ease: "linear",
+    });
+
+    // Memposisikan marquee di tengah
+    gsap.set(".marquee_inner", { xPercent: -50 });
+
+    // Menambahkan event listener untuk scroll event
+    window.addEventListener("scroll", function () {
+      // Memperbarui status isScrollingDown
+      if (window.scrollY > currentScroll) {
+        setIsScrollingDown(true);
+      } else {
+        setIsScrollingDown(false);
+      }
+
+      // Memperbarui timeScale tween berdasarkan status isScrollingDown
+      gsap.to(newTween, {
+        timeScale: isScrollingDown ? 1 : -1,
+      });
+
+      // Memperbarui currentScroll
+      setCurrentScroll(window.scrollY);
+    });
+
+    // Menyimpan tween dalam state
+    setTween(newTween);
+
+    // Membersihkan event listener saat komponen unmount
+    return () => {
+      window.removeEventListener("scroll", function () {
+        // ...
+      });
+    };
+  }, []);
+
+    // const textRef = useRef(null);
+    // const [currentScroll, setCurrentScroll] = useState(0);
+
+    // useEffect(() => {
+    //     window.addEventListener("scroll", () => {
+    //         gsap.to(el, {
+    //             xPercent: currentScroll > 500 ? 100 : -100,
+    //             duration: 20,
+    //             repeat: -1,
+    //         })
+
+    //         setCurrentScroll(window.scrollY);
+    //       });   
+    //     const el = textRef.current;
+    //     gsap.to(el, {
+    //         scrollTrigger: {
+    //             trigger: el,
+    //             start: "top 80%",
+    //             end: "bottom 25%",
+    //             markers: true
+    //         },
+    //     }, [])
+    // }, []);
   return (
-    <div className='marquee text-white uppercase font-bold text-lg px-0 py-3 overflow-hidden w-full h-[100px]'>
-        <div className="marquee_inner my-auto w-fit flex items-center flex-row antialiased bg-[#222] ">
+    <>
+    <div className="spacer h-[50px]"></div>
+    <div className='marquee text-white bg-[#222] uppercase font-bold text-5xl px-0 py-8 overflow-hidden'>
+        <div className="marquee_inner w-fit flex flex-row antialiased">
         {items.map((item) => (
             // eslint-disable-next-line react/jsx-key
             <div className="marquee_part flex items-center flex-shrink-0 px-4 font-smooth">
@@ -16,6 +89,8 @@ const Marquee = () => {
         ))}
         </div>
     </div>
+    <div className="spacer h-[150px]"></div>
+    </>
   )
 }
 
