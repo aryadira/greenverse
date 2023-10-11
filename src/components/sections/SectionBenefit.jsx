@@ -1,12 +1,39 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { landingImg2, arrow } from "../../assets/img/";
 import { benefits } from "../../constants/contents/ongoing";
+// import gsap from "gsap-trial";
+// import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+// import { SplitText } from "gsap-trial/SplitText";
+// gsap.registerPlugin(SplitText, ScrollTrigger)
 
 const sectionBenefit = () => {
+
+  // const ourText = new SplitText('.title-heading', { types: 'chars' });
+  // const chars = ourText.chars
+
+  // useEffect(() => {
+  // gsap.from(
+  //   chars,
+  //   { 
+  //     yPercent: 100,
+  //     stagger: 0.05,
+  //     ease: "back.out",
+  //     duration: 1,
+  //     opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".title-heading",
+  //       markers: true,
+  //       start: "top 80%",
+  //       scrub: true
+  //     }
+  //   }
+  // )
+  // }, []);
+
   return (
     <div className="wrapper">
       <div className="title text-center">
-        <p className="text-[#7D7D7D]">Reasons.</p>
+        <p className=" text-[#7D7D7D]">Reasons.</p>
         <h1 className="text-[32px] mb-4">Why should choose Greenverse?</h1>
       </div>
       <div className="flex justify-between items-start flex-wrap lg:flex-nowrap">
@@ -21,7 +48,7 @@ const sectionBenefit = () => {
                 <p className="my-[10px] mx-[10px] bg-gradient-to-r from-[#50FF96] to-white inline py-[4px] pl-[12px] pr-5 rounded-full">
                   {benefit.id}
                 </p>
-                <h3 className="my-[10px] mx-[10px] text-3xl font-bold">
+                <h3 className="title-heading my-[10px] mx-[10px] text-3xl font-bold">
                   {benefit.title}
                 </h3>
                 <p className="my-[10px] mx-[10px]">{benefit.desc} </p>
