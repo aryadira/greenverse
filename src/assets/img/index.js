@@ -23,6 +23,14 @@ import infraGreen1 from "./infraGreen1.png";
 import infraGreen2 from "./infraGreen2.png";
 import irrigation1 from "./irrigation1.png";
 import irrigation2 from "./irrigation2.png";
+import manure from "./manure.png";
+import millet from "./millet.png";
+import mustard from "./mustard.png";
+import oats from "./oats.png";
+import radish from "./radish.png";
+import ryeegrass from "./ryeegrass.png";
+import sunflower from "./sunflower.png";
+import crimson from "./crimson.png";
 
 export {
   arrow,
@@ -50,4 +58,12 @@ export {
   farming1,
   farming2,
   servicesBanner,
+  manure,
+  millet,
+  mustard,
+  oats,
+  radish,
+  ryeegrass,
+  sunflower,
+  crimson,
 };

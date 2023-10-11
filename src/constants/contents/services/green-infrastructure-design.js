@@ -1,9 +1,16 @@
-const contentGreenInfrastructureDesign = [
+/* eslint-disable no-unused-vars */
+export const contentGreenInfrastructureDesign = [
   {
     id: 1,
     title: "What is Green Infrastructure Design?",
-    paragraph:
-      "Humans have had such a profound impact on the world around us that the modern age has been dubbed the Anthropocene — 'The Age of Humans' — a period in which human activity has been the dominant force influencing the environment and climate. The increasing amounts of energy and materials required to sustain current consumption levels are a danger to the environment as we know. Pollution and waste are damaging water and air quality, altering the climate on a global scale. As the global population continues to grow, more people are moving to cities, and green spaces are disappearing. Fortunately, many people have begun to take action to slow and reverse humankind's negative impact on the planet. Many are choosing to live more sustainably by biking to work, recycling and reducing their consumption levels. However, sustainable practices must also be implemented on a larger scale to truly reduce human impact on the environment. Landscape architects and developers can play an essential role by designing greener homes and planning greener cities. The process of incorporating nature into architectural designs and city planning is called green infrastructure and is a crucial step toward a cleaner and healthier world. Green infrastructure can be implemented in a wide variety of ways that provide essential benefits for both humans and the planet.",
+    paragraph: [
+      "Humans have had such a profound impact on the world around us that the modern age has been dubbed the Anthropocene — 'The Age of Humans' — a period in which human activity has been the dominant force influencing the environment and climate.",
+      "The increasing amounts of energy and materials required to sustain current consumption levels are a danger to the environment as we know. Pollution and waste are damaging water and air quality, altering the climate on a global scale. As the global population continues to grow, more people are moving to cities, and green spaces are disappearing.",
+
+      "Fortunately, many people have begun to take action to slow and reverse humankind's negative impact on the planet. Many are choosing to live more sustainably by biking to work, recycling and reducing their consumption levels. However, sustainable practices must also be implemented on a larger scale to truly reduce human impact on the environment. Landscape architects and developers can play an essential role by designing greener homes and planning greener cities.",
+
+      "The process of incorporating nature into architectural designs and city planning is called green infrastructure and is a crucial step toward a cleaner and healthier world. Green infrastructure can be implemented in a wide variety of ways that provide essential benefits for both humans and the planet.",
+    ],
     image: "import dari assets",
   },
   {
