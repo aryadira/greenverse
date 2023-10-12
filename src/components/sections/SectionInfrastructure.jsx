@@ -12,12 +12,12 @@ const SectionInfrastructure = (props) => {
         <span className='text-black'>Keep Exploring.</span> We have any solutions from our services!
       </p>
 
-      <div className='container-top mt-8 flex justify-between'>
-        <div className='left'>
+      <div className='container my-[100px] -top mt-8 grid lg:grid-cols-2 place-content-center col-reverse'>
+        <div className='left mt-10'>
           <img src={infra1} alt='' />
         </div>
         <div className='right max-w-[581px]'>
-          <h1 className='text-[32px] '>Green Infrastructure Design</h1>
+          <h1 className='text-[32px]'>Green Infrastructure Design</h1>
           <p className='max-w-md text-[#676767] leading-tight'>
             Green infrastructure integrates plants and other natural elements to make urban spaces more sustainable and environmentally friendly.
           </p>
@@ -45,8 +45,9 @@ const SectionInfrastructure = (props) => {
           </div>
         </div>
       </div>
-      <div className='container flex w-full justify-evenly items-center '>
-        <div className='left-content w-[35%]'>
+
+      <div className='container my-[100px] flex w-full justify-evenly items-center flex-wrap '>
+        <div className='left-content w-full md:w-[35%] py-10'>
           <h2 className='text-[30px] font-semibold w-full'>Smart Irrigation Technology</h2>
           <p className='w-full text-[18px] my-2 leading-none text-[#676767]'>
             There is a broad spectrum of smart irrigation technology that consumers can benefit from utilizing. Choosing the correct technology for
@@ -56,15 +57,16 @@ const SectionInfrastructure = (props) => {
             <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`} children={`Learn more`} />
           </div>
         </div>
-        <div className='left-content w-[50%] flex justify-end'>
+        <div className='left-content w-full md:w-[50%] flex justify-end '>
           <img src={infra2} alt='' />
         </div>
       </div>
-      <div className='container flex w-full mt-5 justify-evenly items-center '>
-        <div className='left-content w-[50%] flex justify-start'>
+
+      <div className='container my-[100px] flex w-full justify-evenly items-center flex-wrap flex-col-reverse md:flex-row'>
+        <div className='left-content w-full md:w-[35%] flex justify-end'>
           <img src={infra3} alt='' />
         </div>
-        <div className='left-content w-[35%] mt-10'>
+        <div className='left-content w-full md:w-[35%] py-10'>
           <h2 className='text-[30px] font-semibold w-full'>Agriculture Plantation</h2>
           <p className='w-full text-[18px] my-2 leading-none text-[#676767]'>
             Plantation agriculture is the clearing of forest or land to create an area of farming for one specific crop, which is grown on a large
@@ -75,8 +77,9 @@ const SectionInfrastructure = (props) => {
           </div>
         </div>
       </div>
-      <div className='container flex w-full mt-5 justify-evenly items-center '>
-        <div className='left-content w-[35%]'>
+
+      <div className='container my-[100px] flex w-full justify-evenly items-center flex-wrap'>
+        <div className='left-content w-full md:w-[35%] mt-10'>
           <h2 className='text-[30px] font-semibold w-full'>Vertical Farming</h2>
           <p className='w-full text-[18px] my-2 leading-none text-[#676767]'>
             Vertical farming is an innovative method of growing crops and plants by stacking them on vertical multi-level racks inside a
@@ -86,7 +89,7 @@ const SectionInfrastructure = (props) => {
             <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`} children={`Learn more`} />
           </div>
         </div>
-        <div className='left-content w-[50%] flex justify-end'>
+        <div className='left-content w-full md:w-[35%] py-10'>
           <img src={infra4} alt='' />
         </div>
       </div>

@@ -6,8 +6,8 @@ import Button from "../parts/Button";
 
 const SectionConsultation = () => {
   return (
-    <div className='flex justify-between'>
-      <div className='left bg-white w-1/2 rounded-[30px] pt-20 pl-12'>
+    <div className='flex justify-between gap-5 md:flex-nowrap flex-wrap'>
+      <div className='left bg-white w-full md:w-1/2 rounded-[30px] py-12 px-12'>
         <div className='wrapper'>
           <p className='text-[#676767] text-xl font-base'>Don’t know your plan?</p>
           <p className='text-[32px] text-[#676767] max-w-md leading-tight'>
@@ -19,9 +19,8 @@ const SectionConsultation = () => {
           </div>
         </div>
       </div>
-      <div className='center mx-3'></div>
-      <div className='right w-1/2'>
-        <img src={consul} alt='' />
+      <div className='right w-full md:w-1/2'>
+        <img src={consul} alt='' className="h-full"/>
       </div>
     </div>
   );
