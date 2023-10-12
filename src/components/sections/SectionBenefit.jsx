@@ -7,14 +7,13 @@ import { benefits } from "../../constants/contents/ongoing";
 // gsap.registerPlugin(SplitText, ScrollTrigger)
 
 const sectionBenefit = () => {
-
   // const ourText = new SplitText('.title-heading', { types: 'chars' });
   // const chars = ourText.chars
 
   // useEffect(() => {
   // gsap.from(
   //   chars,
-  //   { 
+  //   {
   //     yPercent: 100,
   //     stagger: 0.05,
   //     ease: "back.out",
@@ -40,6 +39,7 @@ const sectionBenefit = () => {
         <div className="bg-white w-full lg:w-1/2 flex justify-center rounded-[30px] mr-1 mb-3">
           <img src={landingImg2} alt="" className="w-[70%] px-6 pt-6" />
         </div>
+        <div className="mx-2"></div>
         <div className="w-full lg:w-1/2 ">
           <div className="right-benefit gap-3 grid grid-cols-2">
             {benefits.map((benefit) => (
