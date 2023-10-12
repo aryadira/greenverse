@@ -1,33 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { landingImg2, arrow } from "../../assets/img/";
 import { benefits } from "../../constants/contents/ongoing";
-// import gsap from "gsap-trial";
-// import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-// import { SplitText } from "gsap-trial/SplitText";
-// gsap.registerPlugin(SplitText, ScrollTrigger)
 
 const sectionBenefit = () => {
-  // const ourText = new SplitText('.title-heading', { types: 'chars' });
-  // const chars = ourText.chars
-
-  // useEffect(() => {
-  // gsap.from(
-  //   chars,
-  //   {
-  //     yPercent: 100,
-  //     stagger: 0.05,
-  //     ease: "back.out",
-  //     duration: 1,
-  //     opacity: 0,
-  //     scrollTrigger: {
-  //       trigger: ".title-heading",
-  //       markers: true,
-  //       start: "top 80%",
-  //       scrub: true
-  //     }
-  //   }
-  // )
-  // }, []);
 
   return (
     <div className="wrapper">

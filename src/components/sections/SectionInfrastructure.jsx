@@ -23,24 +23,20 @@ const SectionInfrastructure = (props) => {
             make urban spaces more sustainable and environmentally friendly.
           </p>
           <div className="btn-group">
-            <div className="first flex">
+            <div className="first flex gap-2">
               <ButtonGreen title="Parks and urban forest" />
-              <div className="mx-1"></div>
               <ButtonGreen title="Bioswales and rain gardens" />
             </div>
-            <div className="second flex">
+            <div className="second flex justify-start gap-2">
               <ButtonGreen title="Forests and nature reserves" />
-              <div className="mx-1"></div>
               <ButtonGreen title="Green Transportation" />
             </div>
-            <div className="third flex">
+            <div className="third flex justify-start gap-2">
               <ButtonGreen title="Wetlands and constructed wetlands" />
-              <div className="mx-1"></div>
               <ButtonGreen title="Green streets" />
             </div>
-            <div className="fourth flex">
+            <div className="fourth flex justify-start gap-2">
               <ButtonGreen title="Green roofs and walls" />
-              <div className="mx-1"></div>
               <ButtonGreen title="Wildlife habitats and corridors" />
             </div>
           </div>
