@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import { consul } from "../../assets/img";
 import "./styles/navbar.css";
+import Button from "./Button";
 // import "./js/navbar";
 
 const NavOverlayDown = ({ active, pages }) => {
@@ -102,8 +103,8 @@ const NavOverlayDown = ({ active, pages }) => {
             <Link to={"/signin"} className='mr-6'>
               Sign in
             </Link>
-            <Link to={"/signup"} className='bg-black text-white px-8 py-3 rounded-full'>
-              Join Us
+            <Link to={"/signup"}>
+              <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`} children={`Get Started`} />
             </Link>
           </div>
         </ul>
@@ -188,8 +189,8 @@ const Navbar = () => {
               <Link to={"/signin"} className='mr-6'>
                 Sign in
               </Link>
-              <Link to={"/signup"} className='bg-black text-white px-8 py-3 rounded-full'>
-                Join Us
+              <Link to={"/signup"}>
+                <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`} children={`Join Us`} />
               </Link>
             </div>
 

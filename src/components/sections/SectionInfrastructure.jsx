@@ -1,11 +1,16 @@
+/* eslint-disable react/no-children-prop */
 import React from "react";
 import { infra1, infra2, infra3, infra4 } from "../../assets/img/";
 import check from "../../assets/img/check.png";
 import ButtonGreen from "../parts/ButtonGreen";
+import { Button } from "../parts";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const SectionInfrastructure = (props) => {
   return (
-    <div className="wrapper">
+    <div className="wrapper overflow-x-hidden">
       <p className="text-[#676767] text-xl font-base">And Then...</p>
       <p className="text-[32px] text-[#676767] max-w-md">
         <span className="text-black">Keep Exploring.</span> We have any
@@ -17,7 +22,7 @@ const SectionInfrastructure = (props) => {
           <img src={infra1} alt="" />
         </div>
         <div className="right max-w-[581px]">
-          <h1 className="text-[32px] ">Green Infrastructire Design</h1>
+          <h1 className="text-[32px] ">Green Infrastructure Design</h1>
           <p className="max-w-md text-[#676767] leading-tight">
             Green infrastructure integrates plants and other natural elements to
             make urban spaces more sustainable and environmentally friendly.
@@ -42,9 +47,8 @@ const SectionInfrastructure = (props) => {
           </div>
         </div>
       </div>
-      <div className="right"></div>
-      <div className="container flex w-full justify-evenly items-center ">
-        <div className="left-content w-[35%]">
+      <div className="container-card flex w-full justify-evenly items-center ">
+        <div className="content w-[35%]">
           <h2 className="text-[30px] font-semibold w-full">
             Smart Irrigation Technology
           </h2>
@@ -55,23 +59,21 @@ const SectionInfrastructure = (props) => {
             savings.
           </p>
           <div className="btn-left mt-10">
-            <a
-              href=""
-              className="py-3 px-5 rounded-full bg-[#313A36] text-white"
-            >
-              Learn More
-            </a>
+            <Button
+              className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}
+              children={`Learn more`}
+            />
           </div>
         </div>
-        <div className="left-content w-[50%] flex justify-end">
+        <div className="content w-[50%] flex justify-end">
           <img src={infra2} alt="" />
         </div>
       </div>
-      <div className="container flex w-full mt-5 justify-evenly items-center ">
-        <div className="left-content w-[50%] flex justify-start">
+      <div className="container-card flex w-full mt-5 justify-evenly items-center ">
+        <div className="content w-[50%] flex justify-start">
           <img src={infra3} alt="" />
         </div>
-        <div className="left-content w-[35%] mt-10">
+        <div className="content w-[35%] mt-10">
           <h2 className="text-[30px] font-semibold w-full">
             Agriculture Plantation
           </h2>
@@ -81,16 +83,14 @@ const SectionInfrastructure = (props) => {
             scale.
           </p>
           <div className="btn-left mt-10">
-            <a
-              href=""
-              className="py-3 px-5 rounded-full bg-[#313A36] text-white"
-            >
-              Learn More
-            </a>
+            <Button
+              className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}
+              children={`Learn more`}
+            />
           </div>
         </div>
       </div>
-      <div className="container flex w-full mt-5 justify-evenly items-center ">
+      <div className="container-card flex w-full mt-5 justify-evenly items-center ">
         <div className="left-content w-[35%]">
           <h2 className="text-[30px] font-semibold w-full">Vertical Farming</h2>
           <p className="w-full text-[18px] my-2 leading-none text-[#676767]">
@@ -99,15 +99,13 @@ const SectionInfrastructure = (props) => {
             controlled-environment building.
           </p>
           <div className="btn-left mt-10">
-            <a
-              href=""
-              className="py-3 px-5 rounded-full bg-[#313A36] text-white"
-            >
-              Learn More
-            </a>
+            <Button
+              className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}
+              children={`Learn more`}
+            />
           </div>
         </div>
-        <div className="left-content w-[50%] flex justify-end">
+        <div className="right-img w-[50%] flex justify-end">
           <img src={infra4} alt="" />
         </div>
       </div>
