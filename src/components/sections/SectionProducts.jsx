@@ -8,7 +8,7 @@ const SectionProducts = () => {
     <div>
       <p className='text-[#676767] text-xl font-base'>Let's Explore</p>
       <p className='text-[32px] text-[#676767] max-w-md'>
-        <span className='text-black'>Explore.</span> find your favorite products to get the solutions
+        <span className='text-black font-HaasMd'>Explore.</span> find your favorite products to get the solutions
       </p>
       <div className='card'>
         <div className='product-card gap-6 grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-4 my-12'>

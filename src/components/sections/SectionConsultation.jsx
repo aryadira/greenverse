@@ -15,7 +15,7 @@ const SectionConsultation = () => {
             You can consultation what you needs
           </p>
           <div className='mt-14'>
-            <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`} children={`Consultation Now!`} />
+            <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}>Consultation Now!</Button>
           </div>
         </div>
       </div>

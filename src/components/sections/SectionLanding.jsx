@@ -37,12 +37,12 @@ const SectionLanding = () => {
           sustainable and environmentally friendly solutions.
         </h1>
         <div className='btn flex items-center gap-3'>
-          <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] mt-7`} children={`Get Started`} />
-          <Button className={`bg-white border text-black hover:-translate-y-2 mt-7`} children={`Explore`} />
+          <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] mt-7`}>Get Started</Button>
+          <Button className={`bg-white border text-black hover:-translate-y-2 mt-7`}>Explore</Button>
         </div>
       </div>
       <div className='right p-5 flex justify-center lg:justify-end'>
-        <img src={landingImg1} className='hidden md:block' />
+        <img src={landingImg1} className='hidden md:block animate-updown' />
       </div>
     </div>
   );

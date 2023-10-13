@@ -33,7 +33,7 @@ const sectionBenefit = () => {
     <div className='wrapper'>
       <div className='title text-center'>
         <p className=' text-[#676767] text-xl font-base'>Reasons.</p>
-        <h1 className='text-[32px] mb-8'>Why should choose Greenverse?</h1>
+        <h1 className='text-[32px] mb-8 font-HaasMd'>Why should choose Greenverse?</h1>
       </div>
       <div className='flex justify-between items-start flex-wrap lg:flex-nowrap gap-3'>
         <div className='bg-white w-full lg:w-1/2 flex justify-center rounded-[30px] mr-1 mb-3'>
@@ -47,7 +47,7 @@ const sectionBenefit = () => {
                 <p className='my-[10px] mx-[10px] bg-gradient-to-r from-[#50FF96] to-white inline py-[4px] pl-[12px] pr-5 rounded-full'>
                   {benefit.id}
                 </p>
-                <h3 className='title-heading my-[10px] mx-[10px] text-3xl font-bold'>{benefit.title}</h3>
+                <h3 className='title-heading my-[10px] mx-[10px] text-2xl  font-HaasMd'>{benefit.title}</h3>
                 <p className='my-[10px] mx-[10px]'>{benefit.desc} </p>
               </div>
             ))}
