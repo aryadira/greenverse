@@ -12,7 +12,7 @@ const LandingPage = () => {
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <Marquee />
+      <Marquee>THE GREENING WORLD WILL COME WITH US</Marquee>
       <SpacingLayout>
         <BoxContainer>
           <SectionBenefit />
@@ -38,6 +38,7 @@ const LandingPage = () => {
           <SectionTopics />
         </BoxContainer>
       </SpacingLayout>
+      <Marquee>ENJOY OUR PRODUCTS AND SERVICES</Marquee>
     </div>
   );
 };

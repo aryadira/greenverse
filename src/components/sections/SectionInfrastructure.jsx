@@ -1,7 +1,7 @@
 import React from "react";
 import { infra1, infra2, infra3, infra4 } from "../../assets/img/";
 import check from "../../assets/img/check.png";
-import ButtonGreen from "../parts/Label";
+import Label from "../parts/Label";
 import { Button } from "../parts";
 
 const SectionInfrastructure = (props) => {
@@ -23,22 +23,23 @@ const SectionInfrastructure = (props) => {
           </p>
           <div className='btn-group'>
             <div className='first flex gap-2'>
-              <ButtonGreen title='Parks and urban forest' />
-              <ButtonGreen title='Bioswales and rain gardens' />
+              <Label title='Parks and urban forest' />
+              <Label title='Bioswales and rain gardens' />
             </div>
             <div className='second flex gap-2'>
-              <ButtonGreen title='Forests and nature reserves' />
-              <ButtonGreen title='Green Transportation' />
+              <Label title='Forests and nature reserves' />
+              <Label title='Green Transportation' />
             </div>
             <div className='third flex gap-2'>
-              <ButtonGreen title='Wetlands and constructed wetlands' />
-              <ButtonGreen title='Green streets' />
+              <Label title='Wetlands and constructed wetlands' />
+              <Label title='Green streets' />
             </div>
             <div className='fourth flex gap-2'>
-              <ButtonGreen title='Green roofs and walls' />
-              <ButtonGreen title='Wildlife habitats and corridors' />
+              <Label title='Green roofs and walls' />
+              <Label title='Wildlife habitats and corridors' />
             </div>
           </div>
+          <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline-block mt-7`}>Learn more</Button>
         </div>
       </div>
 

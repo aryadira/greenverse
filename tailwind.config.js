@@ -11,7 +11,7 @@ export default {
       keyframes: {
         updown: {
           "0%, 100%": {
-            transform: "translateY(-5%)",
+            transform: "translateY(-7%)",
           },
           "50%": {
             transform: "translateY(0)",

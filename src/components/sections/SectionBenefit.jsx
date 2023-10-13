@@ -30,7 +30,7 @@ const sectionBenefit = () => {
   // }, []);
 
   return (
-    <div className='wrapper'>
+    <div className='wrapper mt-[120px]'>
       <div className='title text-center'>
         <p className=' text-[#676767] text-xl font-base'>Reasons.</p>
         <h1 className='text-[32px] mb-8 font-HaasMd'>Why should choose Greenverse?</h1>
