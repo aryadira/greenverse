@@ -7,16 +7,19 @@ const Products = () => {
   const path = useLocation();
 
   return path.pathname != "/products" ? (
-    <div className="products">
+    <div className='products'>
       <Outlet />
     </div>
   ) : (
-    <div className="wrapper">
-      <div className="container-wrapper">
-        <Banner />
+    <div className='wrapper'>
+      <div className='container-wrapper'>
+        <Banner title='Products.'>
+          Explore <br />
+          our products to get some benefits
+        </Banner>
         <SpacingLayout>
-          <BoxContainer className="mt-[100px]">
-            <ProductSection/>
+          <BoxContainer className='mt-[100px]'>
+            <ProductSection />
           </BoxContainer>
         </SpacingLayout>
       </div>

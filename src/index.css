@@ -31,3 +31,26 @@ html {
 body {
   overflow-x: hidden;
 }
+
+.links {
+  position: relative;
+}
+
+.links:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.3s;
+}
+
+.links:hover {
+  opacity: 70%;
+}
+
+.links:hover:after {
+  width: 100%;
+}

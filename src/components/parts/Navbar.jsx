@@ -14,24 +14,24 @@ const NavOverlayDown = ({ active, pages }) => {
   const isLink = (pages) => {
     if (pages == "Products") {
       return (
-        <ul className='w-[20%] text-xl leading-10'>
-          <li onClick={refreshPage}>
-            <Link to={"/products"} className='block mb-4'>
+        <ul className='w-[20%] text-xl leading-10 block'>
+          <li>
+            <Link to={"/products"} className='links mb-4 max-w-fit block'>
               Discover All
             </Link>
-            <Link to={"/products/brassicas"} className='block'>
+            <Link to={"/products/brassicas"} className='links max-w-fit block'>
               Brassicas
             </Link>
-            <Link to={"/products/cover-crop-mixes"} className='block'>
+            <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block'>
               Cover Crop Mixes
             </Link>
-            <Link to={"/products/grasses-millets-sorghums"} className='block'>
+            <Link to={"/products/grasses-millets-sorghums"} className='links max-w-fit block'>
               Grasses Millets Sorghums
             </Link>
-            <Link to={"/products/grains"} className='block'>
+            <Link to={"/products/grains"} className='links max-w-fit block'>
               Grains
             </Link>
-            <Link to={"/products/legumes"} className='block'>
+            <Link to={"/products/legumes"} className='links max-w-fit block'>
               Legumes
             </Link>
           </li>
@@ -40,20 +40,20 @@ const NavOverlayDown = ({ active, pages }) => {
     } else if (pages == "Services") {
       return (
         <ul className='w-[20%] text-xl leading-10'>
-          <li onClick={refreshPage}>
-            <Link to={"/services"} className='block mb-4'>
+          <li>
+            <Link to={"/services"} className='mb-4 links max-w-fit block'>
               Discover All
             </Link>
-            <Link to={"/services/green-infrastructure"} className='block'>
+            <Link to={"/services/green-infrastructure"} className='links max-w-fit block'>
               Green infrastructure
             </Link>
-            <Link to={"/services/smart-irrigation"} className='block'>
+            <Link to={"/services/smart-irrigation"} className='links max-w-fit block'>
               Smart irrigation
             </Link>
-            <Link to={"/services/agriculture-plantation"} className='block'>
+            <Link to={"/services/agriculture-plantation"} className='links max-w-fit block'>
               Agriculture plantation
             </Link>
-            <Link to={"/services/vertical-farming"} className='block'>
+            <Link to={"/services/vertical-farming"} className='links max-w-fit block'>
               Vertical farming
             </Link>
           </li>
@@ -62,40 +62,40 @@ const NavOverlayDown = ({ active, pages }) => {
     } else {
       return (
         <ul className='lg:w-[16%] w-10% text-xl leading-10'>
-          <li className='mb-5' onClick={refreshPage}>
-            <Link to={"/products"} className='block'>
+          <li className='mb-5'>
+            <Link to={"/products"} className='links max-w-fit block'>
               Products
             </Link>
-            <Link to={"/products/brassicas"} className='block'>
+            <Link to={"/products/brassicas"} className='links max-w-fit block'>
               Brassicas
             </Link>
-            <Link to={"/products/cover-crop-mixes"} className='block'>
+            <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block'>
               Cover Crop Mixes
             </Link>
-            <Link to={"/products/grasses-millets-sorghums"} className='block'>
+            <Link to={"/products/grasses-millets-sorghums"} className='links max-w-fit block'>
               Grasses Millets Sorghums
             </Link>
-            <Link to={"/products/grains"} className='block'>
+            <Link to={"/products/grains"} className='links max-w-fit block'>
               Grains
             </Link>
-            <Link to={"/products/legumes"} className='block'>
+            <Link to={"/products/legumes"} className='links max-w-fit block'>
               Legumes
             </Link>
           </li>
-          <li onClick={refreshPage}>
-            <Link to={"/services"} className='block'>
+          <li>
+            <Link to={"/services"} className='links'>
               Services
             </Link>
-            <Link to={"/services/green-infrastructure"} className='block'>
+            <Link to={"/services/green-infrastructure"} className='links'>
               Green infrastructure
             </Link>
-            <Link to={"/services/smart-irrigation"} className='block'>
+            <Link to={"/services/smart-irrigation"} className='links'>
               Smart irrigation
             </Link>
-            <Link to={"/services/agriculture-plantation"} className='block'>
+            <Link to={"/services/agriculture-plantation"} className='links'>
               Agriculture plantation
             </Link>
-            <Link to={"/services/vertical-farming"} className='block'>
+            <Link to={"/services/vertical-farming"} className='links'>
               Vertical farming
             </Link>
           </li>
@@ -119,7 +119,7 @@ const NavOverlayDown = ({ active, pages }) => {
       }`}>
       <SpacingLayout>
         <BoxContainer>
-          <nav className='navbar lg:flex block  justify-between py-3'>
+          <nav className='navbar lg:flex  justify-between py-3'>
             <div className='link-title pr-[100px]  mb-2'>
               <h2 className='font-HaasBd text-sm'>{pages}</h2>
             </div>
@@ -152,7 +152,7 @@ const Navbar = () => {
       <SpacingLayout>
         <BoxContainer>
           <nav className='navbar flex justify-between py-3 items-center z-20 bg-white'>
-            <div className='logo' onClick={refreshPage}>
+            <div className='logo'>
               <Link to={"/"} className='font-HaasBd text-2xl'>
                 Greenverse
               </Link>
@@ -160,29 +160,29 @@ const Navbar = () => {
 
             {/* desktop links */}
             <ul className='lg:flex text-base hidden'>
-              <li className='px-2'>
+              <li className='mx-2 relative '>
                 <div
                   onClick={() => {
                     overlayDown("Products");
                   }}
-                  className='cursor-pointer'>
+                  className='cursor-pointer links'>
                   Products
                 </div>
               </li>
-              <li className='px-2'>
+              <li className='mx-2 relative'>
                 <div
                   onClick={() => {
                     overlayDown("Services");
                   }}
-                  className='cursor-pointer'>
+                  className='cursor-pointer links'>
                   Services
                 </div>
               </li>
-              <li className='px-2'>
-                <div className='cursor-pointer'>Topics</div>
+              <li className='mx-2 relative'>
+                <div className='cursor-pointer links'>Topics</div>
               </li>
-              <li className='px-2'>
-                <div className='cursor-pointer'>Consultation</div>
+              <li className='mx-2 relative'>
+                <div className='cursor-pointer links'>Consultation</div>
               </li>
             </ul>
             <div className='lg:flex text-base hidden items-center'>
