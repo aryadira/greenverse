@@ -1,8 +1,7 @@
+/* eslint-disable react/no-children-prop */
 import { Outlet, useLocation } from "react-router-dom";
-import { servicesBanner } from "../../assets/img";
 import { ServiceSection } from "../../components/sections";
 import { BoxContainer, SpacingLayout } from "../../layouts";
-import { Marquee } from "../../components/parts";
 import Banner from "../../components/parts/Banner";
 
 const Services = () => {
@@ -15,10 +14,9 @@ const Services = () => {
   ) : (
     <div className='wrapper bg-[#F5F5F7]'>
       <div className='container-wrapper'>
-        <Banner title='Services.' subtitle='Discover All'>
-          Get your <br />
-          need from our services
-        </Banner>
+        <div className='banner'>
+          <Banner title={"Services."} children={"Get your needs from our service"} />
+        </div>
 
         <div className='content'>
           <SpacingLayout>
