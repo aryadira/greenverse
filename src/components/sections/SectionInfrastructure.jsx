@@ -4,16 +4,32 @@ import { infra1, infra2, infra3, infra4 } from "../../assets/img/";
 import check from "../../assets/img/check.png";
 import Label from "../parts/Label";
 import { Button } from "../parts";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { gsap } from "gsap-trial";
+import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+import { SplitText } from "gsap-trial/SplitText";
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const SectionInfrastructure = (props) => {
+  let split = new SplitText(".wrapper p", { types: "chars" });
+  let mySplit = split.chars;
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".wrapper",
+      start: "top 80%",
+      end: "top 30%",
+      markers: true,
+    },
+  });
 
+  tl.to(mySplit, {
+    yPercent: 0,
+    duration: 0.07,
+    stagger: 0.2,
+  });
   return (
     <div className="wrapper">
       <p className="text-[#676767] text-xl font-base">And Then...</p>
-      <p className="text-[32px] text-[#676767] max-w-md">
+      <p className="title text-[32px] text-[#676767] max-w-md">
         <span className="text-black font-HaasMd">Keep Exploring.</span> We have
         any solutions from our services!
       </p>
