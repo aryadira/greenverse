@@ -2,6 +2,10 @@ import { Outlet, useLocation } from "react-router-dom";
 import Banner from "../../components/parts/Banner";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import ProductSection from "../../components/sections/ProductSection";
+import { Marquee } from "../../components/parts";
+import { types } from "../../constants/contents/products/displayAll";
+
+console.log(types[0].name);
 
 const Products = () => {
   const path = useLocation();
@@ -17,6 +21,28 @@ const Products = () => {
           Explore <br />
           our products to get some benefits
         </Banner>
+        <SpacingLayout className=''>
+          <BoxContainer>
+            <div className='w-full types grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-3'>
+              <div className='bg-white flex justify-center items-center h-48 text-lg p-4 text-center rounded-2xl my-3'>
+                <h1>Brassicas</h1>
+              </div>
+              <div className='bg-white flex justify-center items-center h-48 text-lg p-4 text-center rounded-2xl my-3'>
+                <h1>Cover Crop Mixes</h1>
+              </div>
+              <div className='bg-white flex justify-center items-center h-48 text-lg p-4 text-center rounded-2xl my-3'>
+                <h1>Grasses, Millets, Sorghums</h1>
+              </div>
+              <div className='bg-white flex justify-center items-center h-48 text-lg p-4 text-center rounded-2xl my-3'>
+                <h1>Grains</h1>
+              </div>
+              <div className='bg-white flex justify-center items-center h-48 text-lg p-4 text-center rounded-2xl my-3'>
+                <h1>Legumes</h1>
+              </div>
+            </div>
+          </BoxContainer>
+        </SpacingLayout>
+        <Marquee className='h-[0px]'>Let's Find Our Products!</Marquee>
         <SpacingLayout>
           <BoxContainer className='mt-[100px]'>
             <ProductSection />

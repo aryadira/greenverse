@@ -15,7 +15,7 @@ const NavOverlayDown = ({ active, pages }) => {
     if (pages == "Products") {
       return (
         <ul className='w-[20%] text-xl leading-10 block'>
-          <li>
+          <li onClick={refreshPage}>
             <Link to={"/products"} className='links mb-4 max-w-fit block'>
               Discover All
             </Link>
@@ -40,7 +40,7 @@ const NavOverlayDown = ({ active, pages }) => {
     } else if (pages == "Services") {
       return (
         <ul className='w-[20%] text-xl leading-10'>
-          <li>
+          <li onClick={refreshPage}>
             <Link to={"/services"} className='mb-4 links max-w-fit block'>
               Discover All
             </Link>
@@ -82,7 +82,7 @@ const NavOverlayDown = ({ active, pages }) => {
               Legumes
             </Link>
           </li>
-          <li>
+          <li onClick={refreshPage}>
             <Link to={"/services"} className='links'>
               Services
             </Link>
@@ -152,7 +152,7 @@ const Navbar = () => {
       <SpacingLayout>
         <BoxContainer>
           <nav className='navbar flex justify-between py-3 items-center z-20 bg-white'>
-            <div className='logo'>
+            <div className='logo' onClick={refreshPage}>
               <Link to={"/"} className='font-HaasBd text-2xl'>
                 Greenverse
               </Link>
