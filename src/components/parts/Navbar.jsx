@@ -196,7 +196,7 @@ const Navbar = () => {
 
             {/* mobile links */}
             <ul className='mobile-nav hidden w-full'>
-              <li onClick={refreshPage}>
+              <li>
                 <div className='menu-icon-container' onClick={() => overlayDown("")}>
                   <div className='menu-icon'>
                     <span className='line-1'></span>
