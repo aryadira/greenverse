@@ -32,7 +32,6 @@ const sectionBenefit = () => {
     let timeLine = gsap.timeline({
       scrollTrigger: {
         trigger: ".title",
-        markers: true,
         start: "top 80%",
         end: "top 30%",
       },
