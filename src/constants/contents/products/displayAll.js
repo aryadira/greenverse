@@ -1,69 +1,77 @@
-import {
-  manure,
-  millet,
-  mustard,
-  oats,
-  radish,
-  ryeegrass,
-  sunflower,
-  crimson,
-} from "../../../assets/img";
+import { manure, millet, mustard, oats, radish, ryeegrass, sunflower, crimson } from "../../../assets/img";
 
-const types = {
-  brassicas: "Brassicas",
-  coverCropMixes: "Cover Crop Mixes",
-  grains: "grains",
-  millets: "Grasses, Millets, Sorghums",
-  legumes: "Legumes",
-};
+const types = [
+  {
+    id: 1,
+    name: "Brassicas",
+  },
+  {
+    id: 2,
+    name: "Cover Crop Mixes",
+  },
+  {
+    id: 3,
+    name: "Grains",
+  },
+  {
+    id: 4,
+    name: "Grasses, Millets, Sorghums",
+  },
+  {
+    id: 5,
+    name: "Legumes",
+  },
+];
 
-export const displayAll = [
+const displayAll = [
   {
     id: 1,
     img: mustard,
-    type: "Brassicas",
+    type: types[0].name,
     title: "Yellow Mustard",
   },
   {
     id: 2,
     img: radish,
-    type: "Radish",
+    type: types[0].name,
     title: "Oilseed Radish",
   },
   {
     id: 3,
     img: ryeegrass,
-    type: "Ryeegrass",
+    type: types[3].name,
     title: "Ryeegrass",
   },
   {
     id: 4,
     img: millet,
-    type: "Grasses, Millets and Sorghums",
+    type: types[3].name,
     title: "Hybrid Pearl Millet",
   },
   {
     id: 5,
     img: manure,
-    type: "Cover Crop Mixes",
+    type: types[1].name,
     title: "Fall Green Manure Mix",
   },
   {
     id: 6,
     img: oats,
-    type: "Grains",
+    type: types[2].name,
     title: "Oats",
   },
   {
     id: 7,
     img: sunflower,
-    type: "Sunflower",
+    type: types[2].name,
     title: "Royal Hybrid 1121 Sunflower",
   },
   {
     id: 8,
     img: crimson,
-    type: "Legumes",
+    type: types[4].name,
     title: "Crimson Flower",
   },
 ];
+
+export { types, displayAll };
