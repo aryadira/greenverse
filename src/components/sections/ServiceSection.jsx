@@ -25,7 +25,7 @@ const ServiceSection = () => {
               ))}
             </div>
           </div>
-          <div className="btn absolute right-0 -bottom-20 z-50 ">
+          <div className="btn absolute right-0 -bottom-20 ">
             <a href="#" className="flex text-xl items-center text-[#4A4A4A]">
               See More{" "}
               <span className="bg-white py-4 px-4 mx-4 rounded-[30px]">

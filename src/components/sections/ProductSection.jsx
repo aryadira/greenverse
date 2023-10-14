@@ -12,7 +12,7 @@ const ProductSection = () => {
           <div className="card grid gap-y-10 grid-cols-2">
             {displayAll.map((content) => (
               <div className="card-content mt-8">
-                <img src={content.img} alt="" />
+                <img src={content.img} className="max-w-[600px]" alt="" />
                 <div className="text mt-8">
                   <h1 className="text-sm text-[#676767]">{content.type}</h1>
                   <h1 className="text-2xl">{content.title}</h1>
