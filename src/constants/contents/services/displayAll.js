@@ -1,13 +1,4 @@
-import {
-  infraGreen1,
-  infraGreen2,
-  irrigation1,
-  irrigation2,
-  farming1,
-  farming2,
-  agriPlant1,
-  agriPlant2,
-} from "../../../assets/img";
+import { infraGreen1, infraGreen2, irrigation1, irrigation2, farming1, farming2, agriPlant1, agriPlant2 } from "../../../assets/img";
 
 export const displayAll = [
   {

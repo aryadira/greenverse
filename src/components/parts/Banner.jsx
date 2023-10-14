@@ -5,8 +5,8 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 const Banner = ({ title, children }) => {
   return (
     <div>
-      <div className='w-full banner mt-7 relative'>
-        <img src={servicesBanner} className='w-full ' alt='' />
+      <div className='w-full banner mt-10 lg:mt-7 relative'>
+        <img src={servicesBanner} className='w-full' alt='' />
         <SpacingLayout>
           <div className='text absolute bottom-1/2 translate-y-1/2 text-xl left-[120px]'>
             <p className='text-[#C8C8C8]'>Discover all</p>

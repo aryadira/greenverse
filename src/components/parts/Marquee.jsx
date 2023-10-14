@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 //
 
 const items = [1, 2, 3, 4, 5, 6];
 
-const Marquee = ({ children }) => {
+const Marquee = ({ className, children }) => {
   const [currentScroll, setCurrentScroll] = useState(0);
   const [isScrollingDown, setIsScrollingDown] = useState(true);
   const [tween, setTween] = useState(null);
@@ -76,9 +76,9 @@ const Marquee = ({ children }) => {
   // }, []);
   return (
     <>
-      <div className='spacer h-[50px]'></div>
+      <div className={`spacer ${className}`}></div>
       <div className='marquee text-white bg-[#222] uppercase font-bold text-5xl px-0 py-8 overflow-hidden'>
-        <div className='marquee_inner w-fit flex flex-row antialiased'>
+        <div className='marquee_inner w-fit flex flex-row antialiased' key={items.id}>
           {items.map((item) => (
             // eslint-disable-next-line react/jsx-key
             <div className='marquee_part flex items-center flex-shrink-0 px-4 font-smooth'>
