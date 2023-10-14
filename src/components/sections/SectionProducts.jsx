@@ -14,7 +14,7 @@ const SectionProducts = () => {
         trigger: ".product-card",
         start: "top 100%",
         end: "top 35%",
-        markers: true,
+        // markers: true,
         scrub: 1,
       },
     });
