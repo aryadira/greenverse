@@ -44,7 +44,7 @@ const LandingPage = () => {
 					<SectionTopics />
 				</BoxContainer>
 			</SpacingLayout>
-			<Marquee className={'border-b-2 border-white'}>
+			<Marquee>
 				ENJOY OUR PRODUCTS AND SERVICES
 			</Marquee>
 		</div>
