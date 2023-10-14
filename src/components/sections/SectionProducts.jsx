@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import React, { useEffect } from "react";
 import CardProduct from "../parts/CardProduct";
 import { product1, product2, product3, product4 } from "../../assets/img";
 import gsap from "gsap-trial";
