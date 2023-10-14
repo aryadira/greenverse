@@ -1,20 +1,21 @@
 import React from "react";
 import { servicesBanner } from "../../assets/img";
+import { BoxContainer, SpacingLayout } from "../../layouts";
 
-const Banner = () => {
+const Banner = ({ title, children }) => {
   return (
     <div>
-      <div className="banner mt-7 relative">
-        <div className="banner relative mt-7">
-          <img src={servicesBanner} className="w-full" alt="" />
-          <div className="text absolute bottom-1/2 translate-y-1/2 text-xl left-[160px] ">
-            <p className="text-[#C8C8C8]">Discover all</p>
-            <p className="text-[#C8C8C8] text-[40px] leading-10">
-              <span className="text-white">Services</span> Get your <br /> needs
-              from our services
+      <div className='w-full banner mt-7 relative'>
+        <img src={servicesBanner} className='w-full ' alt='' />
+        <SpacingLayout>
+          <div className='text absolute bottom-1/2 translate-y-1/2 text-xl left-[120px]'>
+            <p className='text-[#C8C8C8]'>Discover all</p>
+            <p className='text-[#C8C8C8] text-[40px] leading-10'>
+              <span className='text-white'>{title} </span>
+              {children}
             </p>
           </div>
-        </div>
+        </SpacingLayout>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import {
   SectionInfrastructure,
   SectionConsultation,
 } from "../components/sections";
-import { Marquee } from "../components/parts";
+import { Footer, Marquee } from "../components/parts";
 
 const LandingPage = () => {
   return (
@@ -18,8 +18,8 @@ const LandingPage = () => {
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <Marquee />
-      <SpacingLayout className="mt-[100px]">
+      <Marquee>THE GREENING WORLD WILL COME WITH US</Marquee>
+      <SpacingLayout>
         <BoxContainer>
           <SectionBenefit />
         </BoxContainer>
@@ -31,7 +31,7 @@ const LandingPage = () => {
       </SpacingLayout>
       <SpacingLayout className="mt-[100px]">
         <BoxContainer>
-          <SectionInfrastructure />
+          <SectionInfrastructure/>
         </BoxContainer>
       </SpacingLayout>
       <SpacingLayout className="my-[150px]">
@@ -44,6 +44,10 @@ const LandingPage = () => {
           <SectionTopics />
         </BoxContainer>
       </SpacingLayout>
+      <SpacingLayout>
+        <Footer />
+      </SpacingLayout>
+      <Marquee>ENJOY OUR PRODUCTS AND SERVICES</Marquee>
     </div>
   );
 };
