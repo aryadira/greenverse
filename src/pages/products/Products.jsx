@@ -23,7 +23,7 @@ const Products = () => {
         </Banner>
         <SpacingLayout className=''>
           <BoxContainer>
-            <div className='w-full types grid grid-cols-1 md:grid-cols-5 gap-3'>
+            <div className='w-full types grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-3'>
               <div className='bg-white flex justify-center items-center h-48 text-lg p-4 text-center rounded-2xl my-3'>
                 <h1>Brassicas</h1>
               </div>
