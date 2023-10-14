@@ -16,7 +16,7 @@ const sectionBenefit = () => {
           start: "top 100%",
           end: "top 40%",
           scrub: 5,
-          markers: true,
+          // markers: true,
         },
       },
       []
