@@ -13,31 +13,31 @@ const SectionProducts = () => {
       scrollTrigger: {
         trigger: ".product-card",
         start: "top 100%",
-        end: "top 50%",
+        end: "top 35%",
         markers: true,
-        // scrub: 5,
+        scrub: 1,
       },
     });
 
     tl.from(".card1", { yPercent: 100, xPercent: -120 }).to(".card1", {
       yPercent: 0,
       xPercent: 0,
-      duration: 2,
+      duration: 1,
     });
     tl.from(".card2", { yPercent: 100, xPercent: -120 }).to(".card2", {
       yPercent: 0,
       xPercent: 0,
-      duration: 3,
+      duration: 1,
     });
-    tl.from(".card3", { yPercent: 100, xPercent: 150 }).to(".card3", {
+    tl.from(".card3", { yPercent: 100, xPercent: 120 }).to(".card3", {
       yPercent: 0,
       xPercent: 0,
-      duration: 2,
+      duration: 1,
     });
-    tl.from(".card4", { yPercent: 100, xPercent: 130 }).to(".card4", {
+    tl.from(".card4", { yPercent: 100, xPercent: 120 }).to(".card4", {
       yPercent: 0,
       xPercent: 0,
-      duration: 3,
+      duration: 1,
     });
 
     // splittext animation
