@@ -1,4 +1,14 @@
-import { crimson } from '../../../assets/img';
+import {
+	irrigationImage1,
+	irrigationImage2,
+	irrigationImage3,
+	irrigationImage4,
+	irrigationImage5,
+	irrigationImage6,
+	irrigationImage7,
+	irrigationImage8,
+	irrigationImage9,
+} from '../../../assets/img';
 
 export const smartIrrigation = [
 	{
@@ -26,7 +36,7 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: '',
+						path: irrigationImage1,
 						desc_img: 'tes',
 					},
 				],
@@ -56,7 +66,7 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: crimson,
+						path: irrigationImage2,
 						desc_img: 'tes',
 					},
 				],
@@ -78,7 +88,12 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: crimson,
+						path: irrigationImage3,
+						desc_img: 'tes',
+					},
+					{
+						id: 2,
+						path: irrigationImage4,
 						desc_img: 'tes',
 					},
 				],
@@ -99,13 +114,7 @@ export const smartIrrigation = [
 						text: 'Soil moisture sensors can be connected to an existing irrigation system controller. The sensor measures the soil moisture content in the root zone before a scheduled irrigation event and bypasses the cycle if the soil moisture is above a specific threshold. Different types of soil moisture sensors are available and the consumer should ensure system compatibility before purchasing a sensor. Some soil moisture sensors include a soil freeze sensor that will interrupt the irrigation cycle if temperatures fall below 32 F. Soil moisture sensors are available as wired or wireless systems. Typical cost for a soil moisture sensor can range from $99 to $165.',
 					},
 				],
-				img: [
-					{
-						id: 1,
-						path: crimson,
-						desc_img: 'tes',
-					},
-				],
+				img: [{ id: 1, path: '', desc_img: '' }],
 			},
 			{
 				id: 2,
@@ -131,7 +140,17 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: crimson,
+						path: irrigationImage5,
+						desc_img: 'tes',
+					},
+					{
+						id: 2,
+						path: irrigationImage6,
+						desc_img: 'tes',
+					},
+					{
+						id: 3,
+						path: irrigationImage7,
 						desc_img: 'tes',
 					},
 				],
@@ -162,7 +181,12 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: crimson,
+						path: irrigationImage8,
+						desc_img: 'tes',
+					},
+					{
+						id: 2,
+						path: irrigationImage9,
 						desc_img: 'tes',
 					},
 				],

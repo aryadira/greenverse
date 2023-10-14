@@ -22,7 +22,7 @@ const SmartIrrigation = () => {
 									))}
 									{content.img.map((imgContent) => (
 										<div className='img' key={imgContent.id}>
-											<img src={imgContent.path} alt='' />
+											<img src={imgContent.path} className='max-w-[300px] my-8' alt='' />
 											<p>{imgContent.desc_img}</p>
 										</div>
 									))}
