@@ -6,13 +6,13 @@ import { Footer, Marquee } from "../components/parts";
 
 const LandingPage = () => {
   return (
-    <div className='landing-page '>
+    <div className='landing-page bg-[#F5F5F7]'>
       <SpacingLayout className='mb-[20px] mt-[150px]'>
         <BoxContainer>
           <SectionLanding />
         </BoxContainer>
       </SpacingLayout>
-      <Marquee className={`h-[40px]`}>THE GREENING WORLD WILL COME WITH US</Marquee>
+      <Marquee className={"h-[20px]"}>THE GREENING WORLD WILL COME WITH US</Marquee>
       <SpacingLayout>
         <BoxContainer>
           <SectionBenefit />
@@ -37,9 +37,6 @@ const LandingPage = () => {
         <BoxContainer>
           <SectionTopics />
         </BoxContainer>
-      </SpacingLayout>
-      <SpacingLayout>
-        <Footer />
       </SpacingLayout>
       <Marquee>ENJOY OUR PRODUCTS AND SERVICES</Marquee>
     </div>
