@@ -18,7 +18,7 @@ const ProductSection = () => {
                 className='w-full transition duration-300 ease-in-out hover:scale-110 hover:rounded-[30px] cursor-pointer'
               />
             </div>
-            <div className='text pt-4 border-b-2 cursor-pointer links py-6'>
+            <div className='text pt-4 border-b cursor-pointer links py-6'>
               <h1 className='text-sm text-[#676767]'>{content.type}</h1>
               <h1 className='text-2xl font-HaasMd'>{content.title}</h1>
             </div>

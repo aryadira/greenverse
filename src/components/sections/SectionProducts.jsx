@@ -68,43 +68,26 @@ const SectionProducts = () => {
   }, []);
 
   return (
-    <div className="  ">
+    <div>
       <div>
-        <p className="title text-[#676767] text-xl font-base">Let's Explore</p>
-        <p className="title text-[32px] text-[#676767] max-w-md">
-          <span className="text-black font-HaasMd">Explore.</span> find your
-          favorite products to get the solutions
+        <p className='title text-[#676767] text-xl font-base'>Let's Explore</p>
+        <p className='title text-[32px] text-[#676767] max-w-md'>
+          <span className='text-black font-HaasMd'>Explore.</span> find your favorite products to get the solutions
         </p>
       </div>
 
-      <div className="product-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-7">
-        <div className="card1">
-          <CardProduct
-            number={"1"}
-            desc={"Quality seeds for abundant harvests"}
-            img={product1}
-          />
+      <div className='product-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-7'>
+        <div className='card1'>
+          <CardProduct number={"1"} desc={"Quality seeds for abundant harvests"} img={product1} />
         </div>
-        <div className="card2">
-          <CardProduct
-            number={"2"}
-            desc={"Environmentally friendly fertilizer"}
-            img={product2}
-          />
+        <div className='card2'>
+          <CardProduct number={"2"} desc={"Environmentally friendly fertilizer"} img={product2} />
         </div>
-        <div className="card3">
-          <CardProduct
-            number={"3"}
-            desc={"Quality \n agricultural materials"}
-            img={product3}
-          />
+        <div className='card3'>
+          <CardProduct number={"3"} desc={"Quality \n agricultural materials"} img={product3} />
         </div>
-        <div className="card4">
-          <CardProduct
-            number={"4"}
-            desc={"Advanced \n agricultural tools"}
-            img={product4}
-          />
+        <div className='card4'>
+          <CardProduct number={"4"} desc={"Advanced \n agricultural tools"} img={product4} />
         </div>
       </div>
     </div>

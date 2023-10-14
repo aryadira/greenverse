@@ -6,11 +6,14 @@ import Banner from "../../components/parts/Banner";
 const GreenInfrastructure = () => {
   return (
     <div>
-      <div className="wrapper">
-        <div className="container-wrapper">
-          <Banner />
+      <div className='wrapper'>
+        <div className='container-wrapper'>
+          <Banner title='Green Infrastructure Design.'>
+            <br />
+            Find Your Green World
+          </Banner>
         </div>
-        <div className="content pt-[150px]">
+        <div className='content pt-[150px]'>
           <SpacingLayout>
             <BoxContainer>
               <GreenInfraSection />
