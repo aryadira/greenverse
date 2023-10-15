@@ -10,25 +10,112 @@ import { SplitText } from "gsap-trial/SplitText";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const SectionInfrastructure = (props) => {
-  let split = new SplitText(".wrapper .title", { types: "lines" });
-  let mySplit = split.chars;
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".wrapper",
-      start: "top 80%",
-      end: "top 30%",
-      markers: true,
-      scrub: 1,
-    },
+  useEffect(() => {
+    // Animation Tag
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".btn-group",
+        start: "top 100%",
+        end: "top 52%",
+        markers: true,
+        scrub: 1,
+      },
+    });
+
+    tl.from(".tag1", { xPercent: 200 }).to(".tag1", {
+      yPercent: 0,
+      xPercent: 0,
+      duration: 1,
+    });
+    tl.from(".tag2", { xPercent: 200 }).to(".tag2", {
+      yPercent: 0,
+      xPercent: 0,
+      duration: 1,
+    });
+    tl.from(".tag3", { xPercent: 200 }).to(".tag3", {
+      yPercent: 0,
+      xPercent: 0,
+      duration: 1,
+    });
+    tl.from(".tag4", { xPercent: 200 }).to(".tag4", {
+      yPercent: 0,
+      xPercent: 0,
+      duration: 1,
+    });
+    tl.from(".tag5", { xPercent: 200 }).to(".tag5", {
+      yPercent: 0,
+      xPercent: 0,
+      duration: 1,
+    });
+    tl.from(".tag6", { xPercent: 200 }).to(".tag6", {
+      yPercent: 0,
+      xPercent: 0,
+      duration: 1,
+    });
+    tl.from(".tag7", { xPercent: 500 }).to(".tag7", {
+      yPercent: 0,
+      xPercent: 0,
+      duration: 1,
+    });
+    tl.from(".tag8", { xPercent: 200 }).to(".tag8", {
+      yPercent: 0,
+      xPercent: 0,
+      duration: 1,
+    });
+
+    // SplitText Animation
+    let split = new SplitText(".title", { types: "chars" });
+    let mySplit = split.chars;
+    let time = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".wrapper",
+        start: "top 80%",
+        end: "top 30%",
+        // markers: true,
+      },
+    });
+
+    time.to(mySplit, {
+      yPercent: 0,
+      duration: 1,
+      stagger: 0.2,
+    });
+
+    // Animation Infra
+    gsap.to(".cover1", {
+      yPercent: 100,
+      scrollTrigger: {
+        trigger: ".cover1",
+        start: "top 100%",
+        end: "top 52%",
+        // markers: true,
+        scrub: 10,
+      },
+    });
+    gsap.to(".cover2", {
+      xPercent: 100,
+      scrollTrigger: {
+        trigger: ".cover2",
+        start: "top 100%",
+        end: "top 52%",
+        // markers: true,
+        scrub: 10,
+      },
+    });
+    gsap.to(".cover3", {
+      xPercent: -100,
+      scrollTrigger: {
+        trigger: ".cover3",
+        start: "top 100%",
+        end: "top 52%",
+        // markers: true,
+        scrub: 10,
+      },
+    });
   });
 
-  tl.to(mySplit, {
-    yPercent: 0,
-    duration: 0.07,
-    stagger: 0.2,
-  });
   return (
-    <div className="wrapper">w
+    <div className="wrapper">
       <p className="text-[#676767] text-xl font-base">And Then...</p>
       <p className="title text-[32px] text-[#676767] max-w-md">
         <span className="text-black font-HaasMd">Keep Exploring.</span> We have
@@ -44,7 +131,7 @@ const SectionInfrastructure = (props) => {
           />
         </div>
         <div className="right max-w-[581px]">
-          <h1 className="title text-[32px] font-HaasMd">
+          <h1 className="text-[32px] font-HaasMd">
             Green Infrastructure Design
           </h1>
           <p className="max-w-md text-[#676767] text-[18px] my-2 leading-6">
@@ -52,25 +139,42 @@ const SectionInfrastructure = (props) => {
             make urban spaces more sustainable and environmentally friendly.
           </p>
           <div className="btn-group">
-            <div className="first flex gap-2">
-              <Label title="Parks and urban forest" />
-              <Label title="Bioswales and rain gardens" />
+            <div className="flex gap-2">
+              <div className="tag1">
+                <Label title="Parks and urban forest" />
+              </div>
+              <div className="tag2">
+                <Label title="Bioswales and rain gardens" />
+              </div>
             </div>
-            <div className="second flex gap-2">
-              <Label title="Forests and nature reserves" />
-              <Label title="Green Transportation" />
+            <div className="flex gap-2">
+              <div className="tag3">
+                <Label title="Forests and nature reserves" />
+              </div>
+              <div className="tag4">
+                <Label title="Green Transportation" />
+              </div>
             </div>
             <div className="third flex gap-2">
-              <Label title="Wetlands and constructed wetlands" />
-              <Label title="Green streets" />
+              <div className="tag5">
+                <Label title="Wetlands and constructed wetlands" />
+              </div>
+              <div className="tag6">
+                <Label title="Green streets" />
+              </div>
             </div>
             <div className="fourth flex gap-2">
-              <Label title="Green roofs and walls" />
-              <Label title="Wildlife habitats and corridors" />
+              <div className="tag7">
+                <Label title="Green roofs and walls" />
+              </div>
+              <div className="tag8">
+                <Label title="Wildlife habitats and corridors" />
+              </div>
             </div>
           </div>
           <Button
             className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline-block mt-7`}
+            link="/services/green-infrastructure"
           >
             Learn more
           </Button>
@@ -78,7 +182,8 @@ const SectionInfrastructure = (props) => {
       </div>
 
       <div className="container my-[100px] flex w-full justify-evenly items-center flex-wrap ">
-        <div className="left-content w-full md:w-[35%] py-10">
+        <div className="left-content w-full md:w-[35%] py-10 relative">
+          <div className="cover1 w-full h-full absolute bg-[#F5F5F7]"></div>
           <h2 className="text-[30px] font-HaasMd w-full ">
             Smart Irrigation Technology
           </h2>
@@ -91,6 +196,7 @@ const SectionInfrastructure = (props) => {
           <div className="btn-left mt-10">
             <Button
               className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}
+              link="/services/smart-irrigation#top"
             >
               Learn more
             </Button>
@@ -113,7 +219,8 @@ const SectionInfrastructure = (props) => {
             className="animate-[updown_2s_ease-in-out_infinite]"
           />
         </div>
-        <div className="left-content w-full md:w-[35%] py-10">
+        <div className="right-content w-full md:w-[35%] py-10 relative">
+          <div className="cover2 w-full h-full absolute bg-[#F5F5F7]"></div>
           <h2 className="text-[30px] font-HaasMd w-full">
             Agriculture Plantation
           </h2>
@@ -125,6 +232,7 @@ const SectionInfrastructure = (props) => {
           <div className="btn-left mt-10">
             <Button
               className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}
+              link="/services/agriculture-plantation"
             >
               Learn more
             </Button>
@@ -133,7 +241,8 @@ const SectionInfrastructure = (props) => {
       </div>
 
       <div className="container my-[100px] flex w-full justify-evenly items-center flex-wrap">
-        <div className="left-content w-full md:w-[35%] mt-10">
+        <div className="left-content w-full md:w-[35%] mt-10 relative">
+          <div className="cover3 w-full h-[150%] absolute bg-[#F5F5F7]"></div>
           <h2 className="text-[30px] font-HaasMd w-full">Vertical Farming</h2>
           <p className="w-full text-[18px] my-2 leading-6 text-[#676767]">
             Vertical farming is an innovative method of growing crops and plants

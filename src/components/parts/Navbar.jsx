@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import { consul } from "../../assets/img";
@@ -7,20 +7,16 @@ import Button from "./Button";
 // import "./js/navbar";
 
 const NavOverlayDown = ({ active, pages }) => {
-  function refreshPage() {
-    window.location.reload(false);
-  }
-
   const isLink = (pages) => {
     if (pages == "Products") {
       return (
         <ul className='w-[20%] text-xl leading-10 block'>
-          <li onClick={refreshPage}>
-            <Link to={"/products"} className='links mb-4 max-w-fit block'>
+          <li>
+            <NavLink to={"/products"} className='links mb-4 max-w-fit block'>
               Discover All
-            </Link>
-            <Link to={"/products/brassicas"} className='links max-w-fit block'>
-              Brassicas
+            </NavLink>
+            <Link to={"/products/brassica"} className='links max-w-fit block'>
+              Brassica
             </Link>
             <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block'>
               Cover Crop Mixes
@@ -40,7 +36,7 @@ const NavOverlayDown = ({ active, pages }) => {
     } else if (pages == "Services") {
       return (
         <ul className='w-[20%] text-xl leading-10'>
-          <li onClick={refreshPage}>
+          <li>
             <Link to={"/services"} className='mb-4 links max-w-fit block'>
               Discover All
             </Link>
@@ -61,50 +57,50 @@ const NavOverlayDown = ({ active, pages }) => {
       );
     } else {
       return (
-        <ul className='lg:w-[16%] w-10% text-xl leading-10'>
+        <ul className='lg:w-[16%] text-xl leading-10 '>
           <li className='mb-5'>
-            <Link to={"/products"} className='links max-w-fit block'>
+            <Link to={"/products"} className='font-HaasBd text-sm'>
               Products
             </Link>
-            <Link to={"/products/brassicas"} className='links max-w-fit block'>
-              Brassicas
+            <Link to={"/products/brassica"} className='links max-w-fit block text-lg'>
+              Brassica
             </Link>
-            <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block'>
+            <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block text-lg'>
               Cover Crop Mixes
             </Link>
-            <Link to={"/products/grasses-millets-sorghums"} className='links max-w-fit block'>
+            <Link to={"/products/grasses-millets-sorghums"} className='links max-w-fit block text-lg'>
               Grasses Millets Sorghums
             </Link>
-            <Link to={"/products/grains"} className='links max-w-fit block'>
+            <Link to={"/products/grains"} className='links max-w-fit block text-lg'>
               Grains
             </Link>
-            <Link to={"/products/legumes"} className='links max-w-fit block'>
+            <Link to={"/products/legumes"} className='links max-w-fit block text-lg'>
               Legumes
             </Link>
           </li>
-          <li onClick={refreshPage}>
-            <Link to={"/services"} className='links'>
+          <li>
+            <Link to={"/services"} className='font-HaasBd text-sm'>
               Services
             </Link>
-            <Link to={"/services/green-infrastructure"} className='links'>
+            <Link to={"/services/green-infrastructure"} className='links max-w-fit block text-lg'>
               Green infrastructure
             </Link>
-            <Link to={"/services/smart-irrigation"} className='links'>
+            <Link to={"/services/smart-irrigation"} className='links max-w-fit block text-lg'>
               Smart irrigation
             </Link>
-            <Link to={"/services/agriculture-plantation"} className='links'>
+            <Link to={"/services/agriculture-plantation"} className='links max-w-fit block text-lg'>
               Agriculture plantation
             </Link>
-            <Link to={"/services/vertical-farming"} className='links'>
+            <Link to={"/services/vertical-farming"} className='links max-w-fit block text-lg'>
               Vertical farming
             </Link>
           </li>
-          <div className='lg:flex text-base hidden items-center'>
+          <div className='flex text-base items-center mt-5 border-t  py-5'>
             <Link to={"/signin"} className='mr-6'>
               Sign in
             </Link>
             <Link to={"/signup"}>
-              <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`} children={`Get Started`} />
+              <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`}>Join Us</Button>
             </Link>
           </div>
         </ul>
@@ -112,20 +108,22 @@ const NavOverlayDown = ({ active, pages }) => {
     }
   };
 
+  // overdown
+
   return (
     <div
-      className={`clicked-link w-full bg-white border-b backdrop-blur-sm bg-opacity-80 absolute transition duration-500 ease-in-out delay-100 py-5 -z-10 ${
+      className={`clicked-link w-full bg-white border-b backdrop-blur-md bg-opacity-90 absolute transition duration-500 ease-in-out delay-100 py-5 -z-10 ${
         active == "" ? "-translate-y-[800px]" : ""
-      }`}>
+      } `}>
       <SpacingLayout>
         <BoxContainer>
-          <nav className='navbar lg:flex  justify-between py-3'>
+          <nav className='navbar lg:flex justify-between py-3'>
             <div className='link-title pr-[100px]  mb-2'>
               <h2 className='font-HaasBd text-sm'>{pages}</h2>
             </div>
             {isLink(pages)}
             <div>
-              <img src={consul} alt='' className='w-[280px] hidden md:block' />
+              <img src={consul} alt='' className='w-[280px] hidden lg:block' />
             </div>
           </nav>
         </BoxContainer>
@@ -135,12 +133,18 @@ const NavOverlayDown = ({ active, pages }) => {
 };
 
 const Navbar = () => {
+  const location = useLocation();
+
   const [isActive, setIsActive] = useState(false);
   const [isPage, setIsPage] = useState("");
 
-  const overlayDown = (pages) => {
-    setIsActive(!isActive);
+  const overlayDownOn = (pages) => {
+    setIsActive(true);
     setIsPage(pages);
+  };
+
+  const overlayDownOff = () => {
+    setIsActive(false);
   };
 
   function refreshPage() {
@@ -148,11 +152,11 @@ const Navbar = () => {
   }
 
   return (
-    <header className='w-full bg-white top-0 fixed z-10'>
+    <header className={`w-full bg-white top-0 fixed z-10`} id='#top' onMouseLeave={() => setIsActive(false)}>
       <SpacingLayout>
         <BoxContainer>
           <nav className='navbar flex justify-between py-3 items-center z-20 bg-white'>
-            <div className='logo' onClick={refreshPage}>
+            <div className='logo'>
               <Link to={"/"} className='font-HaasBd text-2xl'>
                 Greenverse
               </Link>
@@ -162,8 +166,8 @@ const Navbar = () => {
             <ul className='lg:flex text-base hidden'>
               <li className='mx-2 relative '>
                 <div
-                  onClick={() => {
-                    overlayDown("Products");
+                  onMouseEnter={() => {
+                    overlayDownOn("Products");
                   }}
                   className='cursor-pointer links'>
                   Products
@@ -171,8 +175,8 @@ const Navbar = () => {
               </li>
               <li className='mx-2 relative'>
                 <div
-                  onClick={() => {
-                    overlayDown("Services");
+                  onMouseEnter={() => {
+                    overlayDownOn("Services");
                   }}
                   className='cursor-pointer links'>
                   Services
@@ -190,14 +194,14 @@ const Navbar = () => {
                 Sign in
               </Link>
               <Link to={"/signup"}>
-                <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`} children={`Join Us`} />
+                <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`}>Join Us</Button>
               </Link>
             </div>
 
             {/* mobile links */}
             <ul className='mobile-nav hidden w-full'>
               <li>
-                <div className='menu-icon-container' onClick={() => overlayDown("")}>
+                <div className='menu-icon-container' onClick={() => overlayDownOn("")}>
                   <div className='menu-icon'>
                     <span className='line-1'></span>
                     <span className='line-2'></span>
@@ -208,7 +212,7 @@ const Navbar = () => {
           </nav>
         </BoxContainer>
       </SpacingLayout>
-      <NavOverlayDown active={isActive} pages={isPage} />
+      <NavOverlayDown active={isActive} pages={isPage} onMouseEnter={isActive} />
     </header>
   );
 };

@@ -1,8 +1,19 @@
-import { crimson } from '../../../assets/img';
+import {
+	irrigationImage1,
+	irrigationImage2,
+	irrigationImage3,
+	irrigationImage4,
+	irrigationImage5,
+	irrigationImage6,
+	irrigationImage7,
+	irrigationImage8,
+	irrigationImage9,
+} from '../../../assets/img';
 
 export const smartIrrigation = [
 	{
 		id: 1,
+		id_text: 'first',
 		title: 'Smart Irrigation Technology: Controllers and Sensors',
 		content: [
 			{
@@ -26,8 +37,8 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: '',
-						desc_img: 'tes',
+						path: irrigationImage1,
+						desc_img: '',
 					},
 				],
 			},
@@ -36,6 +47,7 @@ export const smartIrrigation = [
 
 	{
 		id: 2,
+		id_text: 'second',
 		title: 'Smart Irrigation Technology: New Controllers',
 		desc: 'There is a broad spectrum of smart irrigation technology that consumers can benefit from utilizing. Choosing the correct technology for the situation is essential to achieve potential water savings. Watering restrictions exist in some areas of Oklahoma, so the irrigation timer may be adjusted for allowed watering days. Irrigation controllers can be separated into two main categories: Climate based controllers and soil moisture based controllers.',
 		content: [
@@ -56,8 +68,9 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: crimson,
-						desc_img: 'tes',
+						path: irrigationImage2,
+						desc_img:
+							'Figure 1. Evapotranspiration based controller. Photo courtesy of Rainbird',
 					},
 				],
 			},
@@ -78,8 +91,13 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: crimson,
-						desc_img: 'tes',
+						path: irrigationImage3,
+						desc_img: 'Figure 2. Example of soil moisture controller',
+					},
+					{
+						id: 2,
+						path: irrigationImage4,
+						desc_img: 'Ideal locations for soil moisture sensor placement',
 					},
 				],
 			},
@@ -87,6 +105,7 @@ export const smartIrrigation = [
 	},
 	{
 		id: 3,
+		id_text: 'third',
 		title: 'Smart Irrigation Technology: Add-on Sensors',
 		desc: 'In many cases, a scheduling irrigation controller is already in use on a property and upgrading to a smart controller is impractical. To increase efficiency of automatic irrigation systems a soil moisture, rain, wind or freeze sensor can be added to upgrade the existing system. Some manufacturers produce devices capable of measuring multiple environmental elements using one apparatus. Many sensors are compatible with existing systems, easy to install and produce similar results to smart irrigation controllers. The add-on sensors are generally more affordable than smart irrigation controllers, assuming a compatible irrigation timer is already installed on site.',
 		content: [
@@ -99,13 +118,7 @@ export const smartIrrigation = [
 						text: 'Soil moisture sensors can be connected to an existing irrigation system controller. The sensor measures the soil moisture content in the root zone before a scheduled irrigation event and bypasses the cycle if the soil moisture is above a specific threshold. Different types of soil moisture sensors are available and the consumer should ensure system compatibility before purchasing a sensor. Some soil moisture sensors include a soil freeze sensor that will interrupt the irrigation cycle if temperatures fall below 32 F. Soil moisture sensors are available as wired or wireless systems. Typical cost for a soil moisture sensor can range from $99 to $165.',
 					},
 				],
-				img: [
-					{
-						id: 1,
-						path: crimson,
-						desc_img: 'tes',
-					},
-				],
+				img: [{ id: 1, path: '', desc_img: '' }],
 			},
 			{
 				id: 2,
@@ -131,8 +144,20 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: crimson,
-						desc_img: 'tes',
+						path: irrigationImage5,
+						desc_img:
+							'Figure 4. Rain sensor with a small basin to collect rainfall.',
+					},
+					{
+						id: 2,
+						path: irrigationImage6,
+						desc_img:
+							'Figure 5. Rain sensor attached to a gutter (top) and the inside of an expanding disc rain sensor (bottom). Photos courtesy of Hunter Industries.',
+					},
+					{
+						id: 3,
+						path: irrigationImage7,
+						desc_img: '',
 					},
 				],
 			},
@@ -141,6 +166,7 @@ export const smartIrrigation = [
 
 	{
 		id: 4,
+		id_text: 'fourth',
 		title: 'Wind Sensors',
 		content: [
 			{
@@ -162,8 +188,15 @@ export const smartIrrigation = [
 				img: [
 					{
 						id: 1,
-						path: crimson,
-						desc_img: 'tes',
+						path: irrigationImage8,
+						desc_img:
+							'Figure 6. Irrigating during windy conditions wastes water and reduces system efficiency.',
+					},
+					{
+						id: 2,
+						path: irrigationImage9,
+						desc_img:
+							'Figure 7. Example wind sensor for use in the landscape. Photo courtesy of Hunter Industries.',
 					},
 				],
 			},

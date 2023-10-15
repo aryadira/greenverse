@@ -1,6 +1,8 @@
+/* eslint-disable react/no-children-prop */
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import { GreenInfraSection } from "../../components/sections";
 import Banner from "../../components/parts/Banner";
+import transition from "../../components/transition/transition";
 // import { Search } from '../../components/parts';
 
 const GreenInfrastructure = () => {
@@ -8,9 +10,9 @@ const GreenInfrastructure = () => {
     <div>
       <div className='wrapper'>
         <div className='container-wrapper'>
-          <Banner />
+          <Banner subtitle={"Explore."} title={"Green Infrastructure Design."} children={"Find your green world"} />
         </div>
-        <div className='content pt-[150px]'>
+        <div className='content py-[50px]'>
           <SpacingLayout>
             <BoxContainer>
               <GreenInfraSection />
@@ -22,4 +24,4 @@ const GreenInfrastructure = () => {
   );
 };
 
-export default GreenInfrastructure;
+export default transition(GreenInfrastructure);

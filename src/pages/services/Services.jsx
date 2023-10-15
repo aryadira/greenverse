@@ -3,19 +3,33 @@ import { Outlet, useLocation } from "react-router-dom";
 import { ServiceSection } from "../../components/sections";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import Banner from "../../components/parts/Banner";
+import { Helmet } from "react-helmet";
+import transition from "../../components/transition/transition";
 
 const Services = () => {
   const path = useLocation();
 
+  const firstChar = path.pathname.slice(10).charAt(0).toUpperCase();
+  const remainingPath = path.pathname.slice(11);
+  const finalPath = firstChar.toUpperCase() + remainingPath;
+
+  const withoutStrip = finalPath.replace(/[._-]/g, " ");
+
   return path.pathname != "/services" ? (
     <div className='Services'>
+      <Helmet>
+        <title>{path.pathname.match("-") ? withoutStrip : finalPath} | Greenverse</title>
+      </Helmet>
       <Outlet />
     </div>
   ) : (
     <div className='wrapper bg-[#F5F5F7]'>
       <div className='container-wrapper'>
         <div className='banner'>
-          <Banner title={"Services."} children={"Get your needs from our service"} />
+          <Banner title={"Services."} subtitle='Discover All'>
+            Get your <br />
+            needs from our service
+          </Banner>
         </div>
 
         <div className='content'>
@@ -34,4 +48,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default transition(Services);

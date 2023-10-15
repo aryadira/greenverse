@@ -1,11 +1,10 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import {
   Consultation,
   LandingPage,
-  Topics,
+  Brassica,
   NotFound,
   Products,
-  Brassicas,
   CoverCropMixes,
   Grains,
   GrassesMilletsSorghums,
@@ -16,28 +15,38 @@ import {
   VerticalFarming,
   Legumes,
 } from "../pages";
+import SignIn from "../pages/SignIn";
+import SignUp from "../pages/SignUp";
+import { AnimatePresence } from "framer-motion";
 
 const Routing = () => {
+  const location = useLocation();
+
   return (
-    <Routes>
-      <Route path='/' exact element={<LandingPage />} />
-      <Route path='products' element={<Products />}>
-        <Route path='brassicas' element={<Brassicas />} />
-        <Route path='cover-crop-mixes' element={<CoverCropMixes />} />
-        <Route path='grains' element={<Grains />} />
-        <Route path='grasses-millets-sorghums' element={<GrassesMilletsSorghums />} />
-        <Route path='legumes' element={<Legumes />} />
-      </Route>
-      <Route path='/services' element={<Services />}>
-        <Route path={"green-infrastructure"} element={<GreenInfrastructure />} />
-        <Route path={"smart-irrigation"} element={<SmartIrrigationSystem />} />
-        <Route path={"agriculture-plantation"} element={<AgriculturePlantation />} />
-        <Route path={"vertical-farming"} element={<VerticalFarming />} />
-      </Route>
-      <Route path='/topics' element={<Topics />} />
-      <Route path='/consultation' element={<Consultation />} />
-      <Route path='*' element={<NotFound />} />
-    </Routes>
+    <>
+      <AnimatePresence mode='wait'>
+        <Routes location={location} key={location.pathname}>
+          <Route index path='/' exact element={<LandingPage />} />
+          <Route path='products' exact element={<Products />}>
+            <Route path='brassica' exact element={<Brassica />} />
+            <Route path='cover-crop-mixes' element={<CoverCropMixes />} />
+            <Route path='grains' element={<Grains />} />
+            <Route path='grasses-millets-sorghums' element={<GrassesMilletsSorghums />} />
+            <Route path='legumes' element={<Legumes />} />
+          </Route>
+          <Route path='/services' element={<Services />}>
+            <Route path={"green-infrastructure"} element={<GreenInfrastructure />} />
+            <Route path={"smart-irrigation"} element={<SmartIrrigationSystem />} />
+            <Route path={"agriculture-plantation"} element={<AgriculturePlantation />} />
+            <Route path={"vertical-farming"} element={<VerticalFarming />} />
+          </Route>
+          <Route path='/consultation' element={<Consultation />} />
+          <Route path='/signin' element={<SignIn />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 };
 

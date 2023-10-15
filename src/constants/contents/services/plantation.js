@@ -1,7 +1,7 @@
 export const plantation = [
 	{
 		id: 1,
-		title: 'Plantation Agriculture Definition',
+		title: '1. Plantation Agriculture Definition',
 		desc: 'There are a variety of agricultural methods used across the world. Plantation agriculture is one of these',
 		content: [
 			{
@@ -22,7 +22,7 @@ export const plantation = [
 	},
 	{
 		id: 2,
-		title: 'Plantation Agriculture Climate',
+		title: '2. Plantation Agriculture Climate',
 		desc: 'Despite the fact plantations can be found in the USA, plantations are mostly located in tropical and subtropical regions. This is because the climate most suitable for plantations is hot and humid regions. These are mostly located around the equator.',
 		content: [
 			{
@@ -43,7 +43,7 @@ export const plantation = [
 	},
 	{
 		id: 3,
-		title: 'Characteristics of Plantation Agriculture',
+		title: '3. Characteristics of Plantation Agriculture',
 		desc: "There is a large range of characteristics associated with plantation agriculture. Let's take a look at some of these characteristics.",
 		content: [
 			{
@@ -108,7 +108,7 @@ export const plantation = [
 	},
 	{
 		id: 4,
-		title: 'Importance of Plantation Agriculture',
+		title: '4. Importance of Plantation Agriculture',
 		desc: 'Although plantation agriculture may seem like an excellent commercial farming technique, it is important to remember that there are negatives as well as positives to this intensive farming.',
 		content: [
 			{

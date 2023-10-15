@@ -9,7 +9,7 @@ const ServiceSection = () => {
     <div className='border-t-2 border-[#0000004d]'>
       {displayAll.map((all) => (
         <div className='relative my-[150px]' key={all.id}>
-          <div className='container-content flex justify-between border-b-2 pb-8'>
+          <div className='container-content flex justify-between border-b-2 pb-8 flex-wrap gap-y-8'>
             <div className='title text-2xl'>
               <p>{all.title}</p>
             </div>

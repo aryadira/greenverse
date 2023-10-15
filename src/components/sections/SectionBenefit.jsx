@@ -42,13 +42,13 @@ const sectionBenefit = () => {
     timeLine.from(myText, {
       opacity: 0,
       yPercent: 20,
-      duration: 2,
+      duration: 1,
       ease: "back",
       stagger: 0.05,
     });
   }, []);
   return (
-    <div className="wrapper mt-[120px]">
+    <div className="wrapper pt-[120px]" id="reasons">
       <div className="text-center">
         <p className="title text-[#676767] text-xl font-base">Reasons.</p>
         <h1 className="title text-[32px] mb-8 font-HaasMd">

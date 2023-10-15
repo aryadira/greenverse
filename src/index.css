@@ -54,3 +54,46 @@ body {
 .links:hover:after {
   width: 100%;
 }
+
+/* transition */
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: bottom;
+  z-index: 100;
+}
+
+.slide-in::after {
+  content: "Greenverse";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 62px;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  transform-origin: top;
+  z-index: 100;
+}
+
+.slide-out::after {
+  content: "Greenverse";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 62px;
+}

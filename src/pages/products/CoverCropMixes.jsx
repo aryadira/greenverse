@@ -5,6 +5,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import CircleButton from "../../components/parts/CircleButton";
 import Card from "../../components/parts/Card";
 import { coverCropMixes } from "../../constants/contents/products/perPage";
+import transition from "../../components/transition/transition";
 
 const CoverCropMixes = () => {
   return (
@@ -20,7 +21,7 @@ const CoverCropMixes = () => {
               </p>
             </div>
             <div className='source-btn flex justify-end'>
-              <CircleButton>Source</CircleButton>
+              <CircleButton link='https://www.johnnyseeds.com/farm-seed/cover-crop-mixes/'>Source</CircleButton>
             </div>
           </div>
         </BoxContainer>
@@ -40,4 +41,4 @@ const CoverCropMixes = () => {
   );
 };
 
-export default CoverCropMixes;
+export default transition(CoverCropMixes);
