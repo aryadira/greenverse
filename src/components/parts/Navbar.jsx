@@ -37,7 +37,7 @@ const NavOverlayDown = ({ active, pages }) => {
       return (
         <ul className='w-[20%] text-xl leading-10'>
           <li>
-            <Link to={"/services"} className='mb-4 links max-w-fit block' onClick={result}>
+            <Link to={"/services"} className='mb-4 links max-w-fit block'>
               Discover All
             </Link>
             <Link to={"/services/green-infrastructure"} className='links max-w-fit block'>
@@ -100,7 +100,7 @@ const NavOverlayDown = ({ active, pages }) => {
               Sign in
             </Link>
             <Link to={"/signup"}>
-              <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`} children={`Join Us`} />
+              <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`}>Join Us</Button>
             </Link>
           </div>
         </ul>
@@ -138,15 +138,13 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const [isPage, setIsPage] = useState("");
 
-  const overlayDown = (pages) => {
-    if (location.pathname + 1) {
-      setIsActive(isActive);
-    } else {
-      setIsActive(!isActive);
-    }
-    setIsActive(!isActive);
-
+  const overlayDownOn = (pages) => {
+    setIsActive(true);
     setIsPage(pages);
+  };
+
+  const overlayDownOff = () => {
+    setIsActive(false);
   };
 
   function refreshPage() {
@@ -154,7 +152,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className='w-full bg-white top-0 fixed z-10' id='#top'>
+    <header className={`w-full bg-white top-0 fixed z-10`} id='#top' onMouseLeave={() => setIsActive(false)}>
       <SpacingLayout>
         <BoxContainer>
           <nav className='navbar flex justify-between py-3 items-center z-20 bg-white'>
@@ -168,8 +166,8 @@ const Navbar = () => {
             <ul className='lg:flex text-base hidden'>
               <li className='mx-2 relative '>
                 <div
-                  onClick={() => {
-                    overlayDown("Products");
+                  onMouseEnter={() => {
+                    overlayDownOn("Products");
                   }}
                   className='cursor-pointer links'>
                   Products
@@ -177,8 +175,8 @@ const Navbar = () => {
               </li>
               <li className='mx-2 relative'>
                 <div
-                  onClick={() => {
-                    overlayDown("Services");
+                  onMouseEnter={() => {
+                    overlayDownOn("Services");
                   }}
                   className='cursor-pointer links'>
                   Services
@@ -196,14 +194,14 @@ const Navbar = () => {
                 Sign in
               </Link>
               <Link to={"/signup"}>
-                <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`} children={`Join Us`} />
+                <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`}>Join Us</Button>
               </Link>
             </div>
 
             {/* mobile links */}
             <ul className='mobile-nav hidden w-full'>
               <li>
-                <div className='menu-icon-container' onClick={() => overlayDown("")}>
+                <div className='menu-icon-container' onClick={() => overlayDownOn("")}>
                   <div className='menu-icon'>
                     <span className='line-1'></span>
                     <span className='line-2'></span>
@@ -214,7 +212,7 @@ const Navbar = () => {
           </nav>
         </BoxContainer>
       </SpacingLayout>
-      <NavOverlayDown active={isActive} pages={isPage} />
+      <NavOverlayDown active={isActive} pages={isPage} onMouseEnter={isActive} />
     </header>
   );
 };
