@@ -3,12 +3,22 @@ import { Outlet, useLocation } from "react-router-dom";
 import { ServiceSection } from "../../components/sections";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import Banner from "../../components/parts/Banner";
+import { Helmet } from "react-helmet";
 
 const Services = () => {
   const path = useLocation();
 
+  const firstChar = path.pathname.slice(10).charAt(0).toUpperCase();
+  const remainingPath = path.pathname.slice(11);
+  const finalPath = firstChar.toUpperCase() + remainingPath;
+
+  const withoutStrip = finalPath.replace(/[._-]/g, " ");
+
   return path.pathname != "/services" ? (
     <div className='Services'>
+      <Helmet>
+        <title>{path.pathname.match("-") ? withoutStrip : finalPath} | Greenverse</title>
+      </Helmet>
       <Outlet />
     </div>
   ) : (
