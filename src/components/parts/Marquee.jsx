@@ -51,29 +51,6 @@ const Marquee = ({ className, children }) => {
     };
   }, []);
 
-  // const textRef = useRef(null);
-  // const [currentScroll, setCurrentScroll] = useState(0);
-
-  // useEffect(() => {
-  //     window.addEventListener("scroll", () => {
-  //         gsap.to(el, {
-  //             xPercent: currentScroll > 500 ? 100 : -100,
-  //             duration: 20,
-  //             repeat: -1,
-  //         })
-
-  //         setCurrentScroll(window.scrollY);
-  //       });
-  //     const el = textRef.current;
-  //     gsap.to(el, {
-  //         scrollTrigger: {
-  //             trigger: el,
-  //             start: "top 80%",
-  //             end: "bottom 25%",
-  //             markers: true
-  //         },
-  //     }, [])
-  // }, []);
   return (
     <>
       <div className={`spacer ${className}`}></div>

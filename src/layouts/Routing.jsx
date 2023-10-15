@@ -16,6 +16,8 @@ import {
   VerticalFarming,
   Legumes,
 } from "../pages";
+import SignIn from "../pages/SignIn";
+import SignUp from "../pages/SignUp";
 
 const Routing = () => {
   return (
@@ -36,6 +38,8 @@ const Routing = () => {
       </Route>
       <Route path='/topics' element={<Topics />} />
       <Route path='/consultation' element={<Consultation />} />
+      <Route path='/signin' element={<SignIn />} />
+      <Route path='/signup' element={<SignUp />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
   );
