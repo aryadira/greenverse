@@ -17,7 +17,7 @@ const SectionInfrastructure = (props) => {
         trigger: ".btn-group",
         start: "top 100%",
         end: "top 52%",
-        markers: true,
+        // markers: true,
         scrub: 1,
       },
     });
