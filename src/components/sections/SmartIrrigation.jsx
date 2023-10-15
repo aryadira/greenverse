@@ -9,7 +9,7 @@ const SmartIrrigation = ({ idText, ...props }) => {
 			<div className='container-irrigation mt-4'>
 				<div className='irrigation-wrapper pt-96 lg:pt-0 relative '>
 					{smartIrrigation.map((data) => (
-						<div className='irrigation-section border-b-[2px] border-[#3d3d3d4d]' id={data.id_text} key={data.id}>
+						<div className='irrigation-section border-b-[2px] border-[#3d3d3d4d] pt-4 lg:pt-0' id={data.id_text} key={data.id}>
 							<h1 className='max-w-[510px] title text-3xl lg:text-3xl font-HaasMd lg:mt-12 '>
 								{data.title}
 							</h1>

@@ -40,6 +40,14 @@ import irrigationImage6 from './irrigation-img6.jpg';
 import irrigationImage7 from './irrigation-img7.jpg';
 import irrigationImage8 from './irrigation-img8.jpg';
 import irrigationImage9 from './irrigation-img9.jpg';
+import infraImg1 from './infra-img1.png';
+import infraImg2 from './infra-img2.png';
+import infraImg3 from './infra-img3.png';
+import infraImg4 from './infra-img4.png';
+import infraImg5 from './infra-img5.png';
+import infraImg6 from './infra-img6.png';
+import infraImg7 from './infra-img7.png';
+import infraImg8 from './infra-img8.png';
 
 export {
 	arrow,
@@ -84,4 +92,12 @@ export {
 	irrigationImage7,
 	irrigationImage8,
 	irrigationImage9,
+	infraImg1,
+	infraImg2,
+	infraImg3,
+	infraImg4,
+	infraImg5,
+	infraImg6,
+	infraImg7,
+	infraImg8,
 };
