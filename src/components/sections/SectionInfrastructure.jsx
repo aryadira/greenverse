@@ -60,7 +60,9 @@ const SectionInfrastructure = (props) => {
               <Label title='Wildlife habitats and corridors' />
             </div>
           </div>
-          <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline-block mt-7`}>Learn more</Button>
+          <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline-block mt-7`} link='/services/green-infrastructure'>
+            Learn more
+          </Button>
         </div>
       </div>
 
@@ -72,7 +74,9 @@ const SectionInfrastructure = (props) => {
             the situation is essential to achieve potential water savings.
           </p>
           <div className='btn-left mt-10'>
-            <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}>Learn more</Button>
+            <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`} link='/services/smart-irrigation#top'>
+              Learn more
+            </Button>
           </div>
         </div>
         <div className='left-content w-full md:w-[50%] flex justify-end '>
@@ -91,7 +95,9 @@ const SectionInfrastructure = (props) => {
             scale.
           </p>
           <div className='btn-left mt-10'>
-            <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}>Learn more</Button>
+            <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`} link='/services/agriculture-plantation'>
+              Learn more
+            </Button>
           </div>
         </div>
       </div>

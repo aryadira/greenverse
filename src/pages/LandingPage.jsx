@@ -4,6 +4,7 @@ import SectionProducts from "../components/sections/SectionProducts";
 import { SectionLanding, SectionTopics, SectionBenefit, SectionInfrastructure, SectionConsultation } from "../components/sections";
 import { Footer, Marquee } from "../components/parts";
 import { Helmet } from "react-helmet";
+import Faq from "../components/sections/Faq";
 
 const LandingPage = () => {
   return (
@@ -39,7 +40,7 @@ const LandingPage = () => {
       </SpacingLayout>
       <SpacingLayout className='my-[150px]'>
         <BoxContainer>
-          <SectionTopics />
+          <Faq />
         </BoxContainer>
       </SpacingLayout>
     </div>

@@ -10,7 +10,7 @@ const Plantation = () => {
 					{plantation.map((data) => (
 						<div className='plantation section' key={data.id}>
 							<h1 className='text-3xl font-HaasMd mt-12'>{data.title}</h1>
-							<p className='mb-4'>{data.desc}</p>
+							<p className='mb-4 max-w-[690px]'>{data.desc}</p>
 							{data.content.map((contentList) => (
 								<div
 									className='plantation-contentList mt-6'
