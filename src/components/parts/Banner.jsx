@@ -10,7 +10,7 @@ const Banner = ({ title, children, image, subtitle }) => {
         <SpacingLayout className={"bg-red-500"}>
           <div className='text absolute bottom-1/2 translate-y-1/2 text-xl left lg:left-[120px] text-center sm:text-left'>
             <p className='text-[#C8C8C8] sm:text-xl text-base'>{subtitle}</p>
-            <p className='text-[#C8C8C8] text-xl lg:text-[40px] leading-7 lg:leading-10'>
+            <p className='text-[#C8C8C8] text-xl lg:text-[40px] leading-7 lg:leading-[44px] max-w-[532px]'>
               <span className='text-white'>{title} </span>
               {children}
             </p>

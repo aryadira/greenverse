@@ -10,7 +10,7 @@ const GreenInfrastructure = () => {
         <div className='container-wrapper'>
           <Banner />
         </div>
-        <div className='content pt-[150px]'>
+        <div className='content py-[150px]'>
           <SpacingLayout>
             <BoxContainer>
               <GreenInfraSection />

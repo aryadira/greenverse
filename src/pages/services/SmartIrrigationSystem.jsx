@@ -9,6 +9,7 @@ const SmartIrrigationSystem = () => {
 			<div className='wrapper'>
 				<div className='container-wrapper'>
 					<Banner
+					subtitle={""}
 						title={'Services.'}
 						children={'Get your needs from our service'}
 					/>
