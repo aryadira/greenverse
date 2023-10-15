@@ -10,7 +10,7 @@ import { SplitText } from "gsap-trial/SplitText";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const SectionInfrastructure = (props) => {
-  let split = new SplitText(".wrapper p", { types: "chars" });
+  let split = new SplitText(".wrapper .title", { types: "lines" });
   let mySplit = split.chars;
   let tl = gsap.timeline({
     scrollTrigger: {
@@ -18,6 +18,7 @@ const SectionInfrastructure = (props) => {
       start: "top 80%",
       end: "top 30%",
       markers: true,
+      scrub: 1,
     },
   });
 
@@ -27,7 +28,7 @@ const SectionInfrastructure = (props) => {
     stagger: 0.2,
   });
   return (
-    <div className="wrapper">
+    <div className="wrapper">w
       <p className="text-[#676767] text-xl font-base">And Then...</p>
       <p className="title text-[32px] text-[#676767] max-w-md">
         <span className="text-black font-HaasMd">Keep Exploring.</span> We have
@@ -43,7 +44,7 @@ const SectionInfrastructure = (props) => {
           />
         </div>
         <div className="right max-w-[581px]">
-          <h1 className="text-[32px] font-HaasMd">
+          <h1 className="title text-[32px] font-HaasMd">
             Green Infrastructure Design
           </h1>
           <p className="max-w-md text-[#676767] text-[18px] my-2 leading-6">
