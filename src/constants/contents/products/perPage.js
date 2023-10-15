@@ -37,39 +37,39 @@ import {
 } from "../../../assets/images/photos/products-img";
 
 const types = {
-  brassicas: "Brassicas",
+  brassica: "brassica",
   coverCropMixes: "Cover Crop Mixes",
   grains: "Grains",
   grasses: "Grasses, Millets, Sorghums",
   legumes: "Legumes",
 };
 
-const brassicas = [
+const brassica = [
   {
     id: 1,
     img: yellowMustard,
-    type: types.brassicas,
+    type: types.brassica,
     title: "Yellow Mustard",
     price: "$7.90/pound",
   },
   {
     id: 2,
     img: oilseedRadish,
-    type: types.brassicas,
+    type: types.brassica,
     title: "Oilseed Radish",
     price: "$10.55/pound",
   },
   {
     id: 3,
     img: purpleTop,
-    type: types.brassicas,
+    type: types.brassica,
     title: "Purple Top Forge Turnips",
     price: "$9.75/pound",
   },
   {
     id: 4,
     img: mightyMustard,
-    type: types.brassicas,
+    type: types.brassica,
     title: "Mighty Mustard Pacific Gold",
     price: "$11.25/pound",
   },
@@ -81,21 +81,21 @@ const coverCropMixes = [
   {
     id: 1,
     img: fallgreen,
-    type: types.brassicas,
+    type: types.brassica,
     title: "Fall Green Manure Mix",
     price: "$9.70/pound",
   },
   {
     id: 2,
     img: springgreen,
-    type: types.brassicas,
+    type: types.brassica,
     title: "Spring Green Manure Mix",
     price: "$10.15/pound",
   },
   {
     id: 3,
     img: peasandoats,
-    type: types.brassicas,
+    type: types.brassica,
     title: "Peas and Oats Mix",
     price: "$7.60/pound",
   },
@@ -312,4 +312,4 @@ const legumes = [
   },
 ];
 
-export { types, brassicas, coverCropMixes, grains, legumes, grasses_millets_sorghums };
+export { types, brassica, coverCropMixes, grains, legumes, grasses_millets_sorghums };

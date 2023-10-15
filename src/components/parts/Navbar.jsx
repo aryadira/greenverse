@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import { consul } from "../../assets/img";
@@ -7,20 +7,16 @@ import Button from "./Button";
 // import "./js/navbar";
 
 const NavOverlayDown = ({ active, pages }) => {
-  function refreshPage() {
-    window.location.reload(false);
-  }
-
   const isLink = (pages) => {
     if (pages == "Products") {
       return (
         <ul className='w-[20%] text-xl leading-10 block'>
-          <li onClick={refreshPage}>
-            <Link to={"/products"} className='links mb-4 max-w-fit block'>
+          <li>
+            <NavLink to={"/products"} className='links mb-4 max-w-fit block'>
               Discover All
-            </Link>
-            <Link to={"/products/brassicas"} className='links max-w-fit block'>
-              Brassicas
+            </NavLink>
+            <Link to={"/products/brassica"} className='links max-w-fit block'>
+              Brassica
             </Link>
             <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block'>
               Cover Crop Mixes
@@ -40,8 +36,8 @@ const NavOverlayDown = ({ active, pages }) => {
     } else if (pages == "Services") {
       return (
         <ul className='w-[20%] text-xl leading-10'>
-          <li onClick={refreshPage}>
-            <Link to={"/services"} className='mb-4 links max-w-fit block'>
+          <li>
+            <Link to={"/services"} className='mb-4 links max-w-fit block' onClick={result}>
               Discover All
             </Link>
             <Link to={"/services/green-infrastructure"} className='links max-w-fit block'>
@@ -62,12 +58,12 @@ const NavOverlayDown = ({ active, pages }) => {
     } else {
       return (
         <ul className='lg:w-[16%] text-xl leading-10 '>
-          <li onClick={refreshPage} className='mb-5'>
+          <li className='mb-5'>
             <Link to={"/products"} className='font-HaasBd text-sm'>
               Products
             </Link>
-            <Link to={"/products/brassicas"} className='links max-w-fit block text-lg'>
-              Brassicas
+            <Link to={"/products/brassica"} className='links max-w-fit block text-lg'>
+              Brassica
             </Link>
             <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block text-lg'>
               Cover Crop Mixes
@@ -82,7 +78,7 @@ const NavOverlayDown = ({ active, pages }) => {
               Legumes
             </Link>
           </li>
-          <li onClick={refreshPage}>
+          <li>
             <Link to={"/services"} className='font-HaasBd text-sm'>
               Services
             </Link>
@@ -112,7 +108,7 @@ const NavOverlayDown = ({ active, pages }) => {
     }
   };
 
-  // mobile
+  // overdown
 
   return (
     <div
@@ -137,11 +133,19 @@ const NavOverlayDown = ({ active, pages }) => {
 };
 
 const Navbar = () => {
+  const location = useLocation();
+
   const [isActive, setIsActive] = useState(false);
   const [isPage, setIsPage] = useState("");
 
   const overlayDown = (pages) => {
+    if (location.pathname + 1) {
+      setIsActive(isActive);
+    } else {
+      setIsActive(!isActive);
+    }
     setIsActive(!isActive);
+
     setIsPage(pages);
   };
 
@@ -154,7 +158,7 @@ const Navbar = () => {
       <SpacingLayout>
         <BoxContainer>
           <nav className='navbar flex justify-between py-3 items-center z-20 bg-white'>
-            <div className='logo' onClick={refreshPage}>
+            <div className='logo'>
               <Link to={"/"} className='font-HaasBd text-2xl'>
                 Greenverse
               </Link>

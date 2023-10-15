@@ -5,6 +5,7 @@ import { SectionLanding, SectionTopics, SectionBenefit, SectionInfrastructure, S
 import { Footer, Marquee } from "../components/parts";
 import { Helmet } from "react-helmet";
 import Faq from "../components/sections/Faq";
+import transition from "../components/transition/transition";
 
 const LandingPage = () => {
   return (
@@ -47,4 +48,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default transition(LandingPage);

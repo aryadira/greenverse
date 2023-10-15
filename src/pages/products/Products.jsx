@@ -4,6 +4,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import ProductSection from "../../components/sections/ProductSection";
 import { Marquee } from "../../components/parts";
 import { Helmet } from "react-helmet";
+import transition from "../../components/transition/transition";
 
 const Products = () => {
   const path = useLocation();
@@ -35,7 +36,7 @@ const Products = () => {
           <BoxContainer>
             <div className='w-full types grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-6'>
               <div className='bg-white hover:bg-neutral-200 shadow-sm flex justify-center items-center h-44 text-lg p-4 text-center rounded-2xl my-6 hover:scale-110 transition-transform'>
-                <h1>Brassicas</h1>
+                <h1>brassica</h1>
               </div>
               <div className='bg-white hover:bg-neutral-200 shadow-sm flex justify-center items-center h-44 text-lg p-4 text-center rounded-2xl my-6 hover:scale-110 transition-transform'>
                 <h1>Cover Crop Mixes</h1>
@@ -63,4 +64,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default transition(Products);

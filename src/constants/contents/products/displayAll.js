@@ -3,7 +3,7 @@ import { manure, millet, mustard, oats, radish, ryeegrass, sunflower, crimson } 
 const types = [
   {
     id: 1,
-    name: "Brassicas",
+    name: "brassica",
   },
   {
     id: 2,

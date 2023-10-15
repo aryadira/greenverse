@@ -5,6 +5,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import CircleButton from "../../components/parts/CircleButton";
 import Card from "../../components/parts/Card";
 import { grasses_millets_sorghums } from "../../constants/contents/products/perPage";
+import transition from "../../components/transition/transition";
 
 const GrassesMilletsSorghums = () => {
   return (
@@ -41,4 +42,4 @@ const GrassesMilletsSorghums = () => {
   );
 };
 
-export default GrassesMilletsSorghums;
+export default transition(GrassesMilletsSorghums);

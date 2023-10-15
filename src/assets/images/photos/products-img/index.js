@@ -1,14 +1,14 @@
-import brassicas_bg from "./brassicas_bg.png";
+import brassica_bg from "./brassica_bg.png";
 import covercropmixes_bg from "./covercropmixes.png";
 import grains_bg from "./grains.png";
 import grasses_bg from "./grasses.png";
 import legumes_bg from "./legumes.png";
 
-// brassicas
-import mightyMustard from "./brassicas/mightyMustardPacificGold.png";
-import oilseedRadish from "./brassicas/oilseedRadish.png";
-import purpleTop from "./brassicas/purpleTopForageTurnips.png";
-import yellowMustard from "./brassicas/yellowMustard.png";
+// brassica
+import mightyMustard from "./brassica/mightyMustardPacificGold.png";
+import oilseedRadish from "./brassica/oilseedRadish.png";
+import purpleTop from "./brassica/purpleTopForageTurnips.png";
+import yellowMustard from "./brassica/yellowMustard.png";
 
 // cover crop mixes
 import fallgreen from "./coverCropMixes/fallgreen.png";
@@ -50,7 +50,7 @@ import ynsyellowpea from "./legumes/ynsyellowpea.png";
 import ynsyellowpeaorganic from "./legumes/ynsyellowpeaorganic.png";
 
 export {
-  brassicas_bg,
+  brassica_bg,
   covercropmixes_bg,
   grains_bg,
   grasses_bg,

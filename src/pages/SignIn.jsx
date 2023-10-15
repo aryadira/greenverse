@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../components/parts";
+import transition from "../components/transition/transition";
 
 const SignIn = () => {
   return (
@@ -51,4 +52,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default transition(SignIn);
