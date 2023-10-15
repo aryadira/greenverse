@@ -48,6 +48,12 @@ import infraImg5 from './infra-img5.png';
 import infraImg6 from './infra-img6.png';
 import infraImg7 from './infra-img7.png';
 import infraImg8 from './infra-img8.png';
+import farmingImg1 from './farming-img1.jpg';
+import farmingImg2 from './farming-img2.jpg';
+import farmingImg3 from './farming-img3.jpg';
+import farmingImg4 from './farming-img4.jpg';
+import farmingImg5 from './farming-img5.jpg';
+import farmingImg6 from './farming-img6.jpg';
 
 export {
 	arrow,
@@ -100,4 +106,10 @@ export {
 	infraImg6,
 	infraImg7,
 	infraImg8,
+	farmingImg1,
+	farmingImg2,
+	farmingImg3,
+	farmingImg4,
+	farmingImg5,
+	farmingImg6,
 };

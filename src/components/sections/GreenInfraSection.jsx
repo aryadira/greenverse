@@ -32,7 +32,7 @@ const GreenInfraSection = () => {
 
 							{contentSection.paragraph.map((paragraphContent) => (
 								<div
-									className='paragraph mt-4 max-w-[716px]'
+									className='paragraph mt-4 lg:max-w-[600px] xl:max-w-[716px]'
 									key={paragraphContent.id}>
 									<div className='text'>{paragraphContent.text}</div>
 								</div>
@@ -42,9 +42,9 @@ const GreenInfraSection = () => {
 				</div>
 			))}
 
-			<div className='absolute sm:max-w-full md:max-w-[350px] lg:max-w-[300px] lg:right-0 top-[500px]'>
+			<div className='absolute sm:max-w-full lg:max-w-[300px] xl:max-w-full lg:right-5 top-[500px] bg-white p-12 max-w-[450px] rounded-[30px]'>
 				<div className='wrapper'>
-					<div className='container bg-white p-12 max-w-[450px] rounded-[30px]'>
+					<div className='container '>
 						<p className='desc mb-8'>
 							Read the full article or jump to a specific section:
 						</p>
