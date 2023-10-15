@@ -148,7 +148,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className='w-full bg-white top-0 fixed z-10'>
+    <header className='w-full bg-white top-0 fixed z-10' id='#top'>
       <SpacingLayout>
         <BoxContainer>
           <nav className='navbar flex justify-between py-3 items-center z-20 bg-white'>

@@ -1,10 +1,10 @@
 import Banner from "../../components/parts/Banner";
-import { covercropmixes_bg, grains_bg, grasses_bg, legumes_bg } from "../../assets/images/photos/products-img";
+import { legumes_bg } from "../../assets/images/photos/products-img";
 import { Marquee } from "../../components/parts";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import CircleButton from "../../components/parts/CircleButton";
 import Card from "../../components/parts/Card";
-import { displayAll } from "../../constants/contents/products/displayAll";
+import { legumes } from "../../constants/contents/products/perPage";
 
 const Legumes = () => {
   return (
@@ -22,7 +22,7 @@ const Legumes = () => {
               </p>
             </div>
             <div className='source-btn flex justify-end'>
-              <CircleButton>Source</CircleButton>
+              <CircleButton link='https://www.johnnyseeds.com/farm-seed/legumes/'>Source</CircleButton>
             </div>
           </div>
         </BoxContainer>
@@ -32,8 +32,8 @@ const Legumes = () => {
         <BoxContainer>
           <hr className='h-[2px] opacity-30 bg-black my-16' />
           <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
-            {displayAll.map((content) => (
-              <Card key={content.id} src={content.img} type={content.type} title={content.title} />
+            {legumes.map((content) => (
+              <Card key={content.id} src={content.img} type={content.type} title={content.title} price={content.price} />
             ))}
           </div>
         </BoxContainer>

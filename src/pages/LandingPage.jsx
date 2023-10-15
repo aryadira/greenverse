@@ -38,7 +38,6 @@ const LandingPage = () => {
           <SectionTopics />
         </BoxContainer>
       </SpacingLayout>
-      <Marquee>ENJOY OUR PRODUCTS AND SERVICES</Marquee>
     </div>
   );
 };

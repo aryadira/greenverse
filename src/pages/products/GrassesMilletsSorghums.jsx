@@ -4,7 +4,7 @@ import { Marquee } from "../../components/parts";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import CircleButton from "../../components/parts/CircleButton";
 import Card from "../../components/parts/Card";
-import { displayAll } from "../../constants/contents/products/displayAll";
+import { grasses_millets_sorghums } from "../../constants/contents/products/perPage";
 
 const GrassesMilletsSorghums = () => {
   return (
@@ -21,7 +21,7 @@ const GrassesMilletsSorghums = () => {
               </p>
             </div>
             <div className='source-btn flex justify-end'>
-              <CircleButton>Source</CircleButton>
+              <CircleButton link='https://www.johnnyseeds.com/farm-seed/grasses-millets-and-sorghums/'>Source</CircleButton>
             </div>
           </div>
         </BoxContainer>
@@ -31,8 +31,8 @@ const GrassesMilletsSorghums = () => {
         <BoxContainer>
           <hr className='h-[2px] opacity-30 bg-black my-16' />
           <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
-            {displayAll.map((content) => (
-              <Card key={content.id} src={content.img} type={content.type} title={content.title} />
+            {grasses_millets_sorghums.map((content) => (
+              <Card key={content.id} src={content.img} type={content.type} title={content.title} price={content.price} />
             ))}
           </div>
         </BoxContainer>
