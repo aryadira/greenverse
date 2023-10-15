@@ -25,7 +25,10 @@ const Services = () => {
     <div className='wrapper bg-[#F5F5F7]'>
       <div className='container-wrapper'>
         <div className='banner'>
-          <Banner title={"Services."} children={"Get your needs from our service"} />
+          <Banner title={"Services."} subtitle='Discover All'>
+            Get your <br />
+            needs from our service
+          </Banner>
         </div>
 
         <div className='content'>
