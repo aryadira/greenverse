@@ -54,6 +54,8 @@ import farmingImg3 from './farming-img3.jpg';
 import farmingImg4 from './farming-img4.jpg';
 import farmingImg5 from './farming-img5.jpg';
 import farmingImg6 from './farming-img6.jpg';
+import question from './question.svg';
+import conselor from './conselor.svg';
 
 export {
 	arrow,
@@ -112,4 +114,6 @@ export {
 	farmingImg4,
 	farmingImg5,
 	farmingImg6,
+	question,
+	conselor,
 };
