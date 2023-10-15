@@ -17,7 +17,7 @@ const SectionInfrastructure = (props) => {
       trigger: ".wrapper",
       start: "top 80%",
       end: "top 30%",
-      markers: true,
+      // markers: true,
     },
   });
 

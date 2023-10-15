@@ -167,4 +167,73 @@ export const greenInfra = [
 			},
 		],
 	},
+	{
+		id: 4,
+		id_text: 'fourth',
+		title: 'Why Choose Green Infrastructure?',
+		desc: '',
+		content: [
+			{
+				id: 1,
+				sub_title: '',
+				img: [
+					{
+						id: 1,
+						title_img: '',
+						path: '',
+						desc_img: '',
+					},
+				], //path
+				paragraph: [
+					{
+						id: 1,
+						text: 'Choosing green infrastructure has very real benefits for both humans and nature. It produces a cleaner and healthier environment, with many other societal perks. Additionally, while some environmental initiatives are stifled due to cost, green infrastructure is typically much more cost-efficient than traditional solutions to the same problems.',
+					},
+					{
+						id: 2,
+						text: 'For example, managing stormwater through green infrastructure eliminates the need for costly water treatment plants and allows smaller drainage pipes to be constructed, which saves on overall project costs.',
+					},
+					{
+						id: 3,
+						text: 'New York City invested in protecting water quality around its Catskills water reservoirs to avoid constructing and operating a costly water filtration plant. While they invested $600 million in water protection efforts, the water filtration plant would have cost $6 billion to construct and roughly $300 million to operate each year.',
+					},
+					{
+						id: 4,
+						text: 'In Indianapolis, green infrastructure for water management allowed the city to reduce the diameter of a sewer pipe by several feet, saving over $300 million in material costs. When calculating the cost benefit of investing in green infrastructure, it is important to account for benefits such as improved public health and a cleaner environment. While these benefits may not have a tangible dollar value, poor health and environmental harm will lead to real costs down the road. Green infrastructure is often more cost-effective than traditional gray infrastructure while also providing numerous other advantages, making it a strong option to consider for urban areas.',
+					},
+				],
+			},
+		],
+	},
+	{
+		id: 5,
+		id_text: 'fifth',
+		title: 'Incorporating Green Infrastructure Into Your Landscape Architecture',
+		desc: '',
+		content: [
+			{
+				id: 1,
+				sub_title: '',
+				img: [
+					{
+						id: 1,
+						title_img: '',
+						path: '',
+						desc_img: '',
+					},
+				], //path
+				paragraph: [
+					{
+						id: 1,
+						text: 'Landscape architects have a unique opportunity to reduce negative environmental impacts by implementing green infrastructure in landscape design. In addition to benefiting the environment, green infrastructure is also important to many consumers. The 2018 Residential Landscape Architecture Trends Survey from the American Society of Landscape Architects (ASLA) highlighted sustainable landscape design elements as some of the most popular landscape design projects and details. Consumers care about sustainability and will be pleased to enjoy landscapes with green infrastructure.',
+					},
+					{
+						id: 2,
+						text: 'Whether you are designing a backyard or planning an entire neighborhood, you can implement green infrastructure features to make the space healthier, cleaner and more enjoyable. Below are some effective ways to incorporate green infrastructure into landscape design on both a small and large scale.',
+					},
+					
+				],
+			},
+		],
+	},
 ];
