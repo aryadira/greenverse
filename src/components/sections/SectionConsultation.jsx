@@ -1,6 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import ButtonDark from "../parts/Button";
 import { consul } from "../../assets/img";
 import Button from "../parts/Button";
 

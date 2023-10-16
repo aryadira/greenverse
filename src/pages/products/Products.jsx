@@ -1,12 +1,10 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import Banner from "../../components/parts/Banner";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import ProductSection from "../../components/sections/ProductSection";
 import { Button, Marquee } from "../../components/parts";
 import { Helmet } from "react-helmet";
 import Transition from "../../components/transition/Transition";
-import { agriPlant1, infra1 } from "../../assets/img";
 import CircleButton from "../../components/parts/CircleButton";
 
 const Products = () => {

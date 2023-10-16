@@ -28,7 +28,7 @@ const GreenInfraSection = () => {
 
       <div className='articles lg:px-0 px-5'>
         {greenInfra.map((data) => (
-          <div className='infrastructure-section border-t border-[#3d3d3d4d] pb-12 pt-28' key={data.id} id={data.id_text}>
+          <div className='infrastructure-section pb-12 pt-28' key={data.id} id={data.id_text}>
             <h1 className='max-w-[610px] title text-3xl lg:text-3xl font-HaasMd'>{data.title}</h1>
             <p className='mt-4 max-w-[610px]'>{data.desc}</p>
             {data.content.map((contentSection) => (

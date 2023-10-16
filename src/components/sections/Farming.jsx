@@ -27,7 +27,7 @@ const Farming = () => {
       <div className='container-farming mt-4'>
         <div className='farming-wrapper pt-80 lg:pt-0 relative'>
           {verticalFarming.map((data) => (
-            <div className='irrigation-section border-b-[2px] pb-8 border-[#3d3d3d4d] pt-16' id={data.id_text} key={data.id}>
+            <div className='irrigation-section pb-8  pt-16' id={data.id_text} key={data.id}>
               <h1 className='max-w-[510px] title text-3xl lg:text-3xl font-HaasMd lg:mt-8 mb-4 '>{data.title}</h1>
               {data.desc.map((descContent) => (
                 <p className='desc mt-4 max-w-[510px]' key={descContent.id}>
