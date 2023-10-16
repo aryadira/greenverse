@@ -4,6 +4,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import { gsap } from "gsap-trial";
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import { SplitText } from "gsap-trial/SplitText";
+import { Button } from "flowbite-react";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const Banner = ({ title, children, image, subtitle }) => {

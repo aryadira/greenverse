@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import { verticalFarming } from "../../constants/contents/services/vertical-farming";
+import { Button } from "../parts";
 
 const Farming = () => {
   let number = 1;
@@ -23,6 +24,9 @@ const Farming = () => {
             ))}
           </div>
         </div>
+        <Button className={`bg-[#313A36] text-white p-2 text-lg rounded-full hover:bg-[#0f231a] mt-10 inline-block `} href='#reasons'>
+          Contact us
+        </Button>
       </div>
       <div className='container-farming mt-4'>
         <div className='farming-wrapper pt-80 lg:pt-0 relative'>

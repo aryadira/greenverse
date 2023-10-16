@@ -2,6 +2,7 @@
 import React from "react";
 import { smartIrrigation } from "../../constants/contents/services/smart-irrigation";
 import { Link } from "react-router-dom";
+import { Button } from "../parts";
 
 const SmartIrrigation = ({ idText, ...props }) => {
   let number = 1;
@@ -24,6 +25,9 @@ const SmartIrrigation = ({ idText, ...props }) => {
             ))}
           </div>
         </div>
+        <Button className={`bg-[#313A36] text-white p-2 text-lg rounded-full hover:bg-[#0f231a] mt-10 inline-block `} href='#reasons'>
+          Contact us
+        </Button>
       </div>
 
       <div className='container-irrigation mt-4'>

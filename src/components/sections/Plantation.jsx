@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import { plantation } from "../../constants/contents/services/plantation";
-import { Button } from "flowbite-react";
+import { Button } from "../parts";
 
 const Plantation = () => {
   let number = 1;
@@ -25,6 +25,9 @@ const Plantation = () => {
             ))}
           </div>
         </div>
+        <Button className={`bg-[#313A36] text-white p-2 text-lg rounded-full hover:bg-[#0f231a] mt-10 inline-block `} href='#reasons'>
+          Contact us
+        </Button>
       </div>
 
       <div className='container-plantation lg:pt-0 mt-4'>

@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import { greenInfra } from "../../constants/contents/services/green-infrastructure";
+import { Button } from "../parts";
 
 const GreenInfraSection = () => {
   let number = 1;
@@ -24,6 +25,9 @@ const GreenInfraSection = () => {
             ))}
           </div>
         </div>
+        <Button className={`bg-[#313A36] text-white p-2 text-lg rounded-full hover:bg-[#0f231a] mt-10 inline-block `} href='#reasons'>
+          Contact us
+        </Button>
       </div>
 
       <div className='articles lg:px-0 px-5'>
