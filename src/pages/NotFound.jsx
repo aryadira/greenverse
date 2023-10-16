@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import notfound from "../assets/images/illustrations";
 
 const NotFound = () => {
   return (
@@ -6,7 +7,9 @@ const NotFound = () => {
       <Helmet>
         <title>Not Found</title>
       </Helmet>
-      <h1>NotFound</h1>
+      <div className='w-full h-screen flex justify-center items-center'>
+        <img src={notfound} alt='not found' className="w-[400px] sm:w-[600px]"/>
+      </div>
     </div>
   );
 };
