@@ -103,12 +103,13 @@ const NavOverlayDown = ({ active, pages }) => {
       return (
         <ul className="lg:w-[16%] text-xl leading-10 ">
           <li className="mb-5">
+            <div className="font-HaasBd text-sm">Products</div>
             <Link
               onClick={() => window.scrollTo(0, 0)}
               to={"/products"}
-              className="font-HaasBd text-sm"
+              className="links max-w-fit block text-lg"
             >
-              Products
+              Discover All
             </Link>
             <Link
               onClick={() => window.scrollTo(0, 0)}
@@ -147,12 +148,13 @@ const NavOverlayDown = ({ active, pages }) => {
             </Link>
           </li>
           <li>
+            <div className="font-HaasBd text-sm">Services</div>
             <Link
               onClick={() => window.scrollTo(0, 0)}
               to={"/services"}
-              className="font-HaasBd text-sm"
+              className="links max-w-fit block text-lg"
             >
-              Services
+              Discover All
             </Link>
             <Link
               onClick={() => window.scrollTo(0, 0)}
@@ -181,6 +183,15 @@ const NavOverlayDown = ({ active, pages }) => {
               className="links max-w-fit block text-lg"
             >
               Vertical farming
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => window.scrollTo(0, 0)}
+              to={"/consultation"}
+              className="links max-w-fit block text-lg mt-5"
+            >
+              Consultation
             </Link>
           </li>
           <div className="flex text-base items-center mt-5 border-t  py-5">
