@@ -2,7 +2,7 @@
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import { GreenInfraSection } from "../../components/sections";
 import Banner from "../../components/parts/Banner";
-import transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 // import { Search } from '../../components/parts';
 
 const GreenInfrastructure = () => {
@@ -10,7 +10,10 @@ const GreenInfrastructure = () => {
     <div>
       <div className='wrapper'>
         <div className='container-wrapper'>
-          <Banner subtitle={"Explore."} title={"Green Infrastructure Design."} children={"Find your green world"} />
+          <Banner subtitle={"Explore."} title={"Green Infrastructure Design."}>
+            <br />
+            Find your green world
+          </Banner>
         </div>
         <div className='content py-[50px]'>
           <SpacingLayout>
@@ -24,4 +27,4 @@ const GreenInfrastructure = () => {
   );
 };
 
-export default transition(GreenInfrastructure);
+export default Transition(GreenInfrastructure);

@@ -2,7 +2,7 @@
 import { SpacingLayout, BoxContainer } from "../../layouts";
 import Banner from "../../components/parts/Banner";
 import Farming from "../../components/sections/Farming";
-import transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 
 SpacingLayout;
 
@@ -11,7 +11,11 @@ const VerticalFarming = () => {
     <div>
       <div className='wrapper'>
         <div className='container-wrapper'>
-          <Banner subtitle={""} title={"Farming."} children={"Easier with Greenverse"} />
+          <Banner subtitle={"Explore."} title={"Vertical Farming."}>
+            <br />
+            Farming more easier <br />
+            with vertical solution
+          </Banner>
 
           <SpacingLayout>
             <BoxContainer>
@@ -26,4 +30,4 @@ const VerticalFarming = () => {
   );
 };
 
-export default transition(VerticalFarming);
+export default Transition(VerticalFarming);

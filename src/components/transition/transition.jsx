@@ -1,12 +1,12 @@
 /* eslint-disable react/display-name */
 import { motion } from "framer-motion";
 
-const transition = (OgComponent) => {
+const Transition = (OgComponent) => {
   return () => (
     <>
       <OgComponent />
       <motion.div
-        className='slide-in'
+        className={`slide-in`}
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}
@@ -23,4 +23,4 @@ const transition = (OgComponent) => {
   );
 };
 
-export default transition;
+export default Transition;

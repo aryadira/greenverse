@@ -27,8 +27,8 @@ const Routing = () => {
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route index path='/' exact element={<LandingPage />} />
-          <Route path='products' exact element={<Products />}>
-            <Route path='brassica' exact element={<Brassica />} />
+          <Route path='products' element={<Products />}>
+            <Route path='brassica' element={<Brassica />} />
             <Route path='cover-crop-mixes' element={<CoverCropMixes />} />
             <Route path='grains' element={<Grains />} />
             <Route path='grasses-millets-sorghums' element={<GrassesMilletsSorghums />} />
