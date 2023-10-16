@@ -12,9 +12,9 @@ const NavOverlayDown = ({ active, pages }) => {
       return (
         <ul className='w-[20%] text-xl leading-10 block'>
           <li>
-            <NavLink to={"/products"} className='links mb-4 max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products"} className='links mb-4 max-w-fit block'>
               Discover All
-            </NavLink>
+            </Link>
             <Link onClick={() => window.scrollTo(0, 0)} to={"/products/brassica"} className='links max-w-fit block'>
               Brassica
             </Link>
@@ -177,9 +177,6 @@ const Navbar = () => {
                   className='cursor-pointer links'>
                   Services
                 </div>
-              </li>
-              <li className='mx-2 relative'>
-                <div className='cursor-pointer links'>Topics</div>
               </li>
               <li className='mx-2 relative'>
                 <div className='cursor-pointer links'>
