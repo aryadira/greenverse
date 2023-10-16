@@ -4,6 +4,7 @@ export const displayAll = [
   {
     id: 1,
     title: "Green Infrastructure",
+    link: "/services/green-infrastructure",
     img: [
       {
         id: 1,
@@ -23,6 +24,7 @@ export const displayAll = [
   {
     id: 2,
     title: "Smart Irrigation Technology",
+    link: "/services/smart-irrigation",
     img: [
       {
         id: 1,
@@ -42,6 +44,7 @@ export const displayAll = [
   {
     id: 3,
     title: "Agriculture Plantation",
+    link: "/services/agriculture-plantation",
     img: [
       {
         id: 1,
@@ -61,6 +64,7 @@ export const displayAll = [
   {
     id: 4,
     title: "Vertical Farming Solutions",
+    link: "/services/vertical-farming",
     img: [
       {
         id: 1,

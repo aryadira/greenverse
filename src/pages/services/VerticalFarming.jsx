@@ -19,7 +19,7 @@ const VerticalFarming = () => {
 
           <SpacingLayout>
             <BoxContainer>
-              <div className='border-t-2 mt-12'>
+              <div className='border-t mt-12'>
                 <Farming />
               </div>
             </BoxContainer>

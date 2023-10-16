@@ -24,7 +24,7 @@ const Brassica = () => {
               </p>
             </div>
             <div className='source-btn flex justify-end'>
-              <CircleButton link='https://www.johnnyseeds.com/farm-seed/brassica/'>Source</CircleButton>
+              <CircleButton link='https://www.johnnyseeds.com/farm-seed/brassicas/'>Source</CircleButton>
             </div>
           </div>
         </BoxContainer>

@@ -15,19 +15,19 @@ const NavOverlayDown = ({ active, pages }) => {
             <NavLink to={"/products"} className='links mb-4 max-w-fit block'>
               Discover All
             </NavLink>
-            <Link to={"/products/brassica"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/brassica"} className='links max-w-fit block'>
               Brassica
             </Link>
-            <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/cover-crop-mixes"} className='links max-w-fit block'>
               Cover Crop Mixes
             </Link>
-            <Link to={"/products/grasses-millets-sorghums"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/grasses-millets-sorghums"} className='links max-w-fit block'>
               Grasses Millets Sorghums
             </Link>
-            <Link to={"/products/grains"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/grains"} className='links max-w-fit block'>
               Grains
             </Link>
-            <Link to={"/products/legumes"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/legumes"} className='links max-w-fit block'>
               Legumes
             </Link>
           </li>
@@ -37,19 +37,19 @@ const NavOverlayDown = ({ active, pages }) => {
       return (
         <ul className='w-[20%] text-xl leading-10'>
           <li>
-            <Link to={"/services"} className='mb-4 links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services"} className='mb-4 links max-w-fit block'>
               Discover All
             </Link>
-            <Link to={"/services/green-infrastructure"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services/green-infrastructure"} className='links max-w-fit block'>
               Green infrastructure
             </Link>
-            <Link to={"/services/smart-irrigation"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services/smart-irrigation"} className='links max-w-fit block'>
               Smart irrigation
             </Link>
-            <Link to={"/services/agriculture-plantation"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services/agriculture-plantation"} className='links max-w-fit block'>
               Agriculture plantation
             </Link>
-            <Link to={"/services/vertical-farming"} className='links max-w-fit block'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services/vertical-farming"} className='links max-w-fit block'>
               Vertical farming
             </Link>
           </li>
@@ -59,47 +59,47 @@ const NavOverlayDown = ({ active, pages }) => {
       return (
         <ul className='lg:w-[16%] text-xl leading-10 '>
           <li className='mb-5'>
-            <Link to={"/products"} className='font-HaasBd text-sm'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products"} className='font-HaasBd text-sm'>
               Products
             </Link>
-            <Link to={"/products/brassica"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/brassica"} className='links max-w-fit block text-lg'>
               Brassica
             </Link>
-            <Link to={"/products/cover-crop-mixes"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/cover-crop-mixes"} className='links max-w-fit block text-lg'>
               Cover Crop Mixes
             </Link>
-            <Link to={"/products/grasses-millets-sorghums"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/grasses-millets-sorghums"} className='links max-w-fit block text-lg'>
               Grasses Millets Sorghums
             </Link>
-            <Link to={"/products/grains"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/grains"} className='links max-w-fit block text-lg'>
               Grains
             </Link>
-            <Link to={"/products/legumes"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/products/legumes"} className='links max-w-fit block text-lg'>
               Legumes
             </Link>
           </li>
           <li>
-            <Link to={"/services"} className='font-HaasBd text-sm'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services"} className='font-HaasBd text-sm'>
               Services
             </Link>
-            <Link to={"/services/green-infrastructure"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services/green-infrastructure"} className='links max-w-fit block text-lg'>
               Green infrastructure
             </Link>
-            <Link to={"/services/smart-irrigation"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services/smart-irrigation"} className='links max-w-fit block text-lg'>
               Smart irrigation
             </Link>
-            <Link to={"/services/agriculture-plantation"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services/agriculture-plantation"} className='links max-w-fit block text-lg'>
               Agriculture plantation
             </Link>
-            <Link to={"/services/vertical-farming"} className='links max-w-fit block text-lg'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/services/vertical-farming"} className='links max-w-fit block text-lg'>
               Vertical farming
             </Link>
           </li>
           <div className='flex text-base items-center mt-5 border-t  py-5'>
-            <Link to={"/signin"} className='mr-6'>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/signin"} className='mr-6'>
               Sign in
             </Link>
-            <Link to={"/signup"}>
+            <Link onClick={() => window.scrollTo(0, 0)} to={"/signup"}>
               <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`}>Join Us</Button>
             </Link>
           </div>
@@ -139,7 +139,7 @@ const Navbar = () => {
   const [isPage, setIsPage] = useState("");
 
   const overlayDownOn = (pages) => {
-    setIsActive(true);
+    setIsActive(!isActive);
     setIsPage(pages);
   };
 
@@ -147,17 +147,13 @@ const Navbar = () => {
     setIsActive(false);
   };
 
-  function refreshPage() {
-    window.location.reload(false);
-  }
-
   return (
     <header className={`w-full bg-white top-0 fixed z-10`} id='#top' onMouseLeave={() => setIsActive(false)}>
       <SpacingLayout>
         <BoxContainer>
           <nav className='navbar flex justify-between py-3 items-center z-20 bg-white'>
             <div className='logo'>
-              <Link to={"/"} className='font-HaasBd text-2xl'>
+              <Link onClick={() => window.scrollTo(0, 0)} to={"/"} className='font-HaasBd text-2xl'>
                 Greenverse
               </Link>
             </div>
@@ -187,15 +183,17 @@ const Navbar = () => {
               </li>
               <li className='mx-2 relative'>
                 <div className='cursor-pointer links'>
-                  <Link to={"/consultation"}>Consultation</Link>
+                  <Link onClick={() => window.scrollTo(0, 0)} to={"/consultation"}>
+                    Consultation
+                  </Link>
                 </div>
               </li>
             </ul>
             <div className='lg:flex text-base hidden items-center'>
-              <Link to={"/signin"} className='mr-6'>
+              <Link onClick={() => window.scrollTo(0, 0)} to={"/signin"} className='mr-6'>
                 Sign in
               </Link>
-              <Link to={"/signup"}>
+              <Link onClick={() => window.scrollTo(0, 0)} to={"/signup"}>
                 <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a]`}>Join Us</Button>
               </Link>
             </div>
@@ -203,7 +201,7 @@ const Navbar = () => {
             {/* mobile links */}
             <ul className='mobile-nav hidden w-full'>
               <li>
-                <div className='menu-icon-container' onClick={() => overlayDownOn("")}>
+                <div className='menu-icon-container' onClick={() => overlayDownOn()}>
                   <div className='menu-icon'>
                     <span className='line-1'></span>
                     <span className='line-2'></span>

@@ -15,12 +15,14 @@ const SectionConsultation = () => {
             You can consultation what you needs
           </p>
           <div className='mt-14'>
-            <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`}>Consultation Now!</Button>
+            <Button className={`bg-[#313A36] text-white hover:bg-[#0f231a] inline mt-7`} link='/consultation'>
+              Consultation Now!
+            </Button>
           </div>
         </div>
       </div>
       <div className='right w-full md:w-1/2'>
-        <img src={consul} alt='' className="h-full"/>
+        <img src={consul} alt='' className='h-full' />
       </div>
     </div>
   );

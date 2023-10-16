@@ -15,7 +15,7 @@ const SmartIrrigationSystem = () => {
           </Banner>
           <SpacingLayout>
             <BoxContainer>
-              <div className='border-t-2 mt-12 mb-32'>
+              <div className='border-t mt-12 mb-32'>
                 <SmartIrrigation />
               </div>
             </BoxContainer>
