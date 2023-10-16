@@ -16,7 +16,7 @@ const ServiceSection = () => {
             <div className='img grid gap-4 grid-cols-2 border-[#0000004d]'>
               {all.img.map((img) => (
                 <div className='card relative overflow-hidden bg-cover bg-no-repeat hover:saturate-150 ' key={img.id}>
-                  <img src={img.path} alt='' className='transition duration-300 ease-in-out hover:scale-110 hover:rounded-[30px] cursor-pointer' />
+                  <img src={img.path} alt='' className='Transition duration-300 ease-in-out hover:scale-110 hover:rounded-[30px] cursor-pointer' />
                   <div className='text cursor-pointer links border-b py-6'>
                     <p className='text-sm text-[#676767]'>{img.title}</p>
                     <p className='text-lg'>{img.desc}</p>

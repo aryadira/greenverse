@@ -5,7 +5,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import CircleButton from "../../components/parts/CircleButton";
 import Card from "../../components/parts/Card";
 import { grains } from "../../constants/contents/products/perPage";
-import transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 
 const Grains = () => {
   return (
@@ -42,4 +42,4 @@ const Grains = () => {
   );
 };
 
-export default transition(Grains);
+export default Transition(Grains);

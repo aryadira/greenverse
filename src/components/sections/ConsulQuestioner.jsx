@@ -28,14 +28,13 @@ const ConsulQuestioner = () => {
             </div>
           </div>
 
-          <div className="btn w-full flex mt-52 justify-center">
-            <Link to={"/"}>
-              <Button
-                className={`bg-[#313A36] text-lg px-[32px] text-white hover:bg-[#0f231a] mt-7 rounded-[24px]`}
-              >
-                Back to Home
-              </Button>
-            </Link>
+          <div className="btn w-full flex mt-20 justify-center">
+            <Button
+              link={"/"}
+              className={`bg-[#313A36] text-lg px-[32px] text-white hover:bg-[#0f231a] mt-7 rounded-[24px]`}
+            >
+              Back to Home
+            </Button>
           </div>
         </div>
       </div>

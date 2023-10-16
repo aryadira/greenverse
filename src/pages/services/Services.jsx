@@ -4,7 +4,7 @@ import { ServiceSection } from "../../components/sections";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import Banner from "../../components/parts/Banner";
 import { Helmet } from "react-helmet";
-import transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 
 const Services = () => {
   const path = useLocation();
@@ -48,4 +48,4 @@ const Services = () => {
   );
 };
 
-export default transition(Services);
+export default Transition(Services);

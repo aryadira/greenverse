@@ -5,7 +5,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import CircleButton from "../../components/parts/CircleButton";
 import Card from "../../components/parts/Card";
 import { legumes } from "../../constants/contents/products/perPage";
-import transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 
 const Legumes = () => {
   return (
@@ -44,4 +44,4 @@ const Legumes = () => {
 };
 
 // eslint-disable-next-line react-refresh/only-export-components
-export default transition(Legumes);
+export default Transition(Legumes);

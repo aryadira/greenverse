@@ -5,7 +5,7 @@ import React from "react";
 
 const Questioner = () => {
   return (
-    <div className="">
+    <div>
       <div className="wrapper">
         <div className="container-content">
           <ConsulQuestioner />
