@@ -1,53 +1,43 @@
-import CardConsul from '../../components/parts/CardConsul';
-import { Button } from 'flowbite-react';
-import { question, conselor } from '../../assets/img';
+import CardConsul from "../../components/parts/CardConsul";
+import { Outlet, useLocation } from "react-router-dom";
+import { Button } from "flowbite-react";
+import { question, conselor } from "../../assets/img";
+import { Helmet } from "react-helmet";
+import transition from "../../components/transition/transition";
 
-import { SpacingLayout, BoxContainer } from '../../layouts';
+import { SpacingLayout, BoxContainer } from "../../layouts";
+import ConsulHome from "../../components/sections/ConsulHome";
 
 const Consultation = () => {
-	return (
-		<div>
-			<div className='wrapper'>
-				<SpacingLayout>
-					<BoxContainer>
-						<div className='mt-32'>
-							<div className='container-consul'>
-								<div className='title text-center'>
-									<h1 className='font-HaasMd text-3xl'>
-										Choose Your Consultation Metode
-									</h1>
-									<p className='text-[#5F5F5F]'>
-										We provide 2 type of consultation
-									</p>
-								</div>
+  const path = useLocation();
 
-								<div className='selection flex flex-wrap flex-col lg:flex-row items-center justify-center sm:mt-0 lg:mt-20 mb-20'>
-									<CardConsul
-										path={question}
-										sub_title={'Questionnaire'}
-										desc={'You just answer the questions we ask.'}
-									/>
-									<div className='mx-4'></div>
-									<CardConsul
-										path={conselor}
-										sub_title={'Conselor'}
-										desc={'You can look for a suitable counselor to consult.'}
-									/>
-								</div>
+  const firstChar = path.pathname.slice(10).charAt(0).toUpperCase();
+  const remainingPath = path.pathname.slice(11);
+  const finalPath = firstChar.toUpperCase() + remainingPath;
 
-								<div className='btn w-full flex mt-52 justify-center'>
-									<Button
-										className={`bg-[#313A36] text-lg px-[32px] text-white hover:bg-[#0f231a] mt-7 rounded-[24px]`}>
-										Back to Home
-									</Button>
-								</div>
-							</div>
-						</div>
-					</BoxContainer>
-				</SpacingLayout>
-			</div>
-		</div>
-	);
+  const withoutStrip = finalPath.replace(/[._-]/g, " ");
+  return path.pathname != "/consultation" ? (
+    <div className="Services">
+      <Helmet>
+        <title>
+          {path.pathname.match("-") ? withoutStrip : finalPath} | Greenverse
+        </title>
+      </Helmet>
+      <Outlet />
+    </div>
+  ) : (
+    <div>
+      <div className="wrapper">
+        <SpacingLayout>
+          <BoxContainer>
+            <div className="mt-32">
+              <ConsulHome />
+            </div>
+          </BoxContainer>
+        </SpacingLayout>
+      </div>
+    </div>
+  );
 };
 
-export default Consultation;
+export default transition(Consultation);

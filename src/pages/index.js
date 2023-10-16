@@ -1,4 +1,8 @@
+// Consultation
 import Consultation from "./consultation/Consultation";
+import Questioner from "./consultation/Questioner";
+import Partner from "./consultation/Partner";
+
 import LandingPage from "./LandingPage";
 
 // products
@@ -33,4 +37,6 @@ export {
   SmartIrrigationSystem,
   AgriculturePlantation,
   VerticalFarming,
+  Questioner,
+  Partner,
 };
