@@ -4,7 +4,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import ProductSection from "../../components/sections/ProductSection";
 import { Button, Marquee } from "../../components/parts";
 import { Helmet } from "react-helmet";
-import Transition from "../../components/transition/Transition";
+import Transition from "../../components/transition/transition";
 import CircleButton from "../../components/parts/CircleButton";
 
 const Products = () => {

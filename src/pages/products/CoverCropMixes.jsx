@@ -5,7 +5,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import CircleButton from "../../components/parts/CircleButton";
 import Card from "../../components/parts/Card";
 import { coverCropMixes } from "../../constants/contents/products/perPage";
-import Transition from "../../components/transition/Transition";
+import Transition from "../../components/transition/transition";
 
 const CoverCropMixes = () => {
   return (

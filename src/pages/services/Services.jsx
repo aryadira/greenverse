@@ -4,7 +4,7 @@ import { ServiceSection } from "../../components/sections";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import Banner from "../../components/parts/Banner";
 import { Helmet } from "react-helmet";
-import Transition from "../../components/transition/Transition";
+import Transition from "../../components/transition/transition";
 import { Button, Marquee } from "../../components/parts";
 import CircleButton from "../../components/parts/CircleButton";
 

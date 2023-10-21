@@ -2,7 +2,7 @@
 import { SpacingLayout, BoxContainer } from "../../layouts";
 import Banner from "../../components/parts/Banner";
 import Farming from "../../components/sections/Farming";
-import Transition from "../../components/transition/Transition";
+import Transition from "../../components/transition/transition";
 
 SpacingLayout;
 

@@ -2,7 +2,7 @@
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import Banner from "../../components/parts/Banner";
 import SmartIrrigation from "../../components/sections/SmartIrrigation";
-import Transition from "../../components/transition/Transition";
+import Transition from "../../components/transition/transition";
 
 const SmartIrrigationSystem = () => {
   return (

@@ -1,6 +1,6 @@
 import Banner from "../../components/parts/Banner";
 import Plantation from "../../components/sections/Plantation";
-import Transition from "../../components/transition/Transition";
+import Transition from "../../components/transition/transition";
 import { SpacingLayout, BoxContainer } from "../../layouts";
 
 const AgriculturePlantation = () => {

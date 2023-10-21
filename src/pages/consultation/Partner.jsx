@@ -1,13 +1,13 @@
 import { SpacingLayout, BoxContainer } from "../../layouts";
 import ConsulPartner from "../../components/sections/ConsulPartner";
-import transition from "../../components/transition/transition";
+import Transition from "../../components/transition/transition";
 import React from "react";
 
 const Partner = () => {
   return (
     <div>
-      <div className="wrapper">
-        <div className="container-content">
+      <div className='wrapper'>
+        <div className='container-content'>
           <ConsulPartner />
         </div>
       </div>
