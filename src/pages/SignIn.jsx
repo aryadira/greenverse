@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../components/parts";
-import Transition from "../components/transition/transition";
+import Transition from "../components/transition/Transition";
 
 const SignIn = () => {
   return (

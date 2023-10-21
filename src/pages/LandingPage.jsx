@@ -5,7 +5,7 @@ import { SectionLanding, SectionTopics, SectionBenefit, SectionInfrastructure, S
 import { Footer, Marquee } from "../components/parts";
 import { Helmet } from "react-helmet";
 import Faq from "../components/sections/Faq";
-import Transition from "../components/transition/transition";
+import Transition from "../components/transition/Transition";
 
 const LandingPage = () => {
   return (

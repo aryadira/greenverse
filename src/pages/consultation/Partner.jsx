@@ -1,6 +1,6 @@
 import { SpacingLayout, BoxContainer } from "../../layouts";
 import ConsulPartner from "../../components/sections/ConsulPartner";
-import Transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 import React from "react";
 
 const Partner = () => {

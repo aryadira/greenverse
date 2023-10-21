@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Button } from "flowbite-react";
 import { question, conselor } from "../../assets/img";
 import { Helmet } from "react-helmet";
-import Transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 
 import { SpacingLayout, BoxContainer } from "../../layouts";
 import ConsulHome from "../../components/sections/ConsulHome";

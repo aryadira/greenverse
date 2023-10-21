@@ -1,6 +1,6 @@
 import { SpacingLayout, BoxContainer } from "../../layouts";
 import ConsulQuestioner from "../../components/sections/ConsulQuestioner";
-import Transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 import React from "react";
 
 const Questioner = () => {

@@ -5,7 +5,7 @@ import { BoxContainer, SpacingLayout } from "../../layouts";
 import CircleButton from "../../components/parts/CircleButton";
 import Card from "../../components/parts/Card";
 import { brassica } from "../../constants/contents/products/perPage";
-import Transition from "../../components/transition/transition";
+import Transition from "../../components/transition/Transition";
 
 const Brassica = () => {
   return (
