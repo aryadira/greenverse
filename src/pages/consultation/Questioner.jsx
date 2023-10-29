@@ -15,4 +15,4 @@ const Questioner = () => {
   );
 };
 
-export default transition(Questioner);
+export default Transition(Questioner);
