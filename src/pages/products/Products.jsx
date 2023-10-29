@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Banner from "../../components/parts/Banner";
 import { BoxContainer, SpacingLayout } from "../../layouts";
 import ProductSection from "../../components/sections/ProductSection";
