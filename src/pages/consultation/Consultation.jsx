@@ -38,4 +38,4 @@ const Consultation = () => {
   );
 };
 
-export default transition(Consultation);
+export default Transition(Consultation);
