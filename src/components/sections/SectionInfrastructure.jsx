@@ -5,8 +5,8 @@ import check from "../../assets/img/check.png";
 import Label from "../parts/Label";
 import { Button } from "../parts";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const SectionInfrastructure = (props) => {

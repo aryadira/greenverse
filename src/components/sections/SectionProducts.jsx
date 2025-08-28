@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import CardProduct from "../parts/CardProduct";
 import { product1, product2, product3, product4 } from "../../assets/img";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(SplitText, ScrollTrigger);
 gsap.registerPlugin(SplitText, ScrollTrigger);
 

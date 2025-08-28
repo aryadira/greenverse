@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { landingImg2, arrow } from "../../assets/img/";
 import { benefits } from "../../constants/contents/ongoing";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const sectionBenefit = () => {
